@@ -37,7 +37,7 @@ export function Nav() {
     <header className="sticky top-0 z-40 border-b border-black/[0.06] bg-surface-2/75 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <NavLink to="/" className="flex items-center gap-2 text-lg font-extrabold tracking-tight text-polar">
-          <span className="h-2 w-2 rounded-full bg-cyan radar-dot" aria-hidden="true" />
+          <span className="relative h-2 w-2 rounded-full bg-cyan radar-dot" aria-hidden="true" />
           Yatra<span className="bg-gradient-to-r from-cyan to-indigo bg-clip-text text-transparent">OS</span>
         </NavLink>
 
