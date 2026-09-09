@@ -55,6 +55,8 @@ export default function TripBuilder() {
         budget,
         dayPlan: data.day_plan,
         totalCost: data.validation.total_cost,
+        interests,
+        pace,
       });
     } catch {
       setError("Couldn't reach the backend — is `uvicorn app.main:app` running on the configured API URL?");

@@ -15,6 +15,8 @@ export interface BuiltTrip {
   budget: number;
   dayPlan: DayPlanItem[];
   totalCost: number;
+  interests: string[];
+  pace: string;
 }
 
 interface TripState {

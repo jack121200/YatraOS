@@ -142,3 +142,27 @@ def upsert_ledger(sb: Client, trip_id: str, entries: list[dict[str, Any]]) -> li
 
 def get_ledger(sb: Client, trip_id: str) -> list[dict[str, Any]]:
     return sb.table("ledger_entries").select("*").eq("trip_id", trip_id).execute().data
+
+
+def set_trip_status(sb: Client, trip_id: str, status: str) -> dict[str, Any]:
+    res = sb.table("trips").update({"status": status}).eq("id", trip_id).execute()
+    return res.data[0]
+
+
+def create_payment(sb: Client, trip_id: str, amount: int, razorpay_order_id: str | None) -> dict[str, Any]:
+    res = (
+        sb.table("payments")
+        .insert({"trip_id": trip_id, "amount": amount, "razorpay_order_id": razorpay_order_id, "status": "pending"})
+        .execute()
+    )
+    return res.data[0]
+
+
+def get_payment(sb: Client, payment_id: str) -> dict[str, Any] | None:
+    rows = sb.table("payments").select("*").eq("id", payment_id).execute().data
+    return rows[0] if rows else None
+
+
+def set_payment_status(sb: Client, payment_id: str, status: str) -> dict[str, Any]:
+    res = sb.table("payments").update({"status": status}).eq("id", payment_id).execute()
+    return res.data[0]

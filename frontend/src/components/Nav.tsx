@@ -6,6 +6,7 @@ const LINKS = [
   { to: "/plan", label: "Plan a trip" },
   { to: "/itinerary", label: "Itinerary" },
   { to: "/recovery", label: "Recovery" },
+  { to: "/my-trips", label: "My trips" },
 ];
 
 const OPERATOR_LINK = { to: "/operator", label: "Operator" };

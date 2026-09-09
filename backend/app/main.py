@@ -2,7 +2,7 @@ import sentry_sdk
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import auth, demo, disruptions, itinerary, ledger, operator, recovery, trips
+from app.api import auth, demo, disruptions, itinerary, ledger, operator, payments, recovery, trips
 from app.config import settings
 
 if settings.sentry_dsn:
@@ -23,6 +23,7 @@ app.include_router(itinerary.router)
 app.include_router(disruptions.router)
 app.include_router(recovery.router)
 app.include_router(ledger.router)
+app.include_router(payments.router)
 app.include_router(operator.router)
 app.include_router(demo.router)
 

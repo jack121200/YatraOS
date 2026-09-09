@@ -5,7 +5,7 @@ across users by design — see deps.operator_db)."""
 
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from supabase import Client
 
 from app.api.deps import operator_db
@@ -56,6 +56,44 @@ def list_live_trips(sb: Client = Depends(operator_db)):
     summaries = [_summarise(sb, t) for t in trips_repo.list_trips(sb)]
     summaries.sort(key=lambda s: s["ripple_impact_score"], reverse=True)
     return {"trips": summaries}
+
+
+@router.get("/trips/{trip_id}")
+def get_trip_detail(trip_id: str, sb: Client = Depends(operator_db)):
+    """Deep-dive into one trip for the operator: full graph, per-node vendor
+    assignment, and payment status, so an operator doesn't have to piece this
+    together from three separate screens."""
+    trip = trips_repo.get_trip(sb, trip_id)
+    if not trip:
+        raise HTTPException(status_code=404, detail="trip not found")
+
+    nodes = trips_repo.get_nodes(sb, trip_id)
+    edges = trips_repo.get_edges(sb, trip_id)
+    graph = TripGraph.rehydrate(trip_id, nodes, edges)
+    payments = sb.table("payments").select("*").eq("trip_id", trip_id).execute().data
+    summary = _summarise(sb, trip)
+
+    return {
+        "trip": trip,
+        "graph": graph.to_dict(),
+        "nodes": nodes,
+        "payments": payments,
+        "summary": summary,
+    }
+
+
+@router.post("/trips/{trip_id}/override")
+def override_node_status(trip_id: str, node_id: str, status: str, sb: Client = Depends(operator_db)):
+    """Manual override: an operator marks a node confirmed/broken by hand,
+    e.g. after a phone call with a vendor that the automated feeds miss."""
+    nodes = trips_repo.get_nodes(sb, trip_id)
+    if not any(n["id"] == node_id for n in nodes):
+        raise HTTPException(status_code=404, detail="node not part of this trip")
+    if status not in ("planned", "confirmed", "at_risk", "broken"):
+        raise HTTPException(status_code=400, detail="invalid status")
+
+    trips_repo.set_node_statuses(sb, {node_id: status})
+    return {"node_id": node_id, "status": status}
 
 
 @router.get("/alerts")

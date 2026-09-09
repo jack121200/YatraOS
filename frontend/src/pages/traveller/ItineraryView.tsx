@@ -35,12 +35,20 @@ export default function ItineraryView() {
           <h1 className="mb-1 text-2xl font-bold capitalize text-polar">{trip.city} itinerary</h1>
           <p className="text-sm text-slate">Trip dependency graph, rendered day-by-day.</p>
         </div>
-        <Link
-          to="/disruption"
-          className="shrink-0 rounded-lg border border-critical/40 px-3 py-2 text-xs font-semibold text-critical hover:bg-critical/10"
-        >
-          Simulate a disruption
-        </Link>
+        <div className="flex shrink-0 gap-2">
+          <Link
+            to="/book"
+            className="rounded-lg bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90"
+          >
+            Save & book
+          </Link>
+          <Link
+            to="/disruption"
+            className="rounded-lg border border-critical/40 px-3 py-2 text-xs font-semibold text-critical hover:bg-critical/10"
+          >
+            Simulate a disruption
+          </Link>
+        </div>
       </div>
 
       <BudgetTracker spent={trip.totalCost} budget={trip.budget} currency={trip.currency} />

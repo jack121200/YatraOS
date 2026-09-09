@@ -28,3 +28,15 @@ class DisruptionTriggerRequest(BaseModel):
 class RecoveryApplyRequest(BaseModel):
     trip_id: str
     plan_id: str
+
+
+class PaymentCreateRequest(BaseModel):
+    trip_id: str
+    amount: int  # major unit, e.g. rupees
+
+
+class PaymentConfirmRequest(BaseModel):
+    payment_id: str
+    razorpay_order_id: str
+    razorpay_payment_id: str
+    razorpay_signature: str
