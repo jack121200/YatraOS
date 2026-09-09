@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import NotFound from "./pages/NotFound";
 import { Nav } from "./components/Nav";
 import Landing from "./pages/Landing";
 import SignIn from "./pages/SignIn";
@@ -37,6 +38,8 @@ export default function App() {
           <Route path="/operator/trips/:tripId" element={<OperatorTripDetail />} />
           <Route path="/operator/alerts" element={<AlertsPanel />} />
           <Route path="/operator/vendor" element={<VendorView />} />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 

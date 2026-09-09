@@ -3,6 +3,7 @@
 .env.local
 .env.*.local
 backend/.env
+frontend/.env
 frontend/.env.local
 
 # node
