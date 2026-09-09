@@ -10,3 +10,4 @@ sentence-transformers
 httpx
 sentry-sdk[fastapi]
 razorpay
+gunicorn
