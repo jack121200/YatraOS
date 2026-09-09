@@ -1,0 +1,272 @@
+{
+  "city": "Munnar",
+  "country": "India",
+  "currency": "INR",
+  "places": [
+    {
+      "id": "stay-01",
+      "name": "Zostel Munnar",
+      "category": "stay",
+      "lat": 10.087,
+      "lng": 77.059,
+      "avg_cost": 900,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Hostel, dorm + private rooms, near town"
+    },
+    {
+      "id": "stay-02",
+      "name": "Misty Mountain Resort",
+      "category": "stay",
+      "lat": 10.095,
+      "lng": 77.065,
+      "avg_cost": 3500,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Mid-range, tea-garden views"
+    },
+    {
+      "id": "stay-03",
+      "name": "Windermere Estate",
+      "category": "stay",
+      "lat": 10.075,
+      "lng": 77.08,
+      "avg_cost": 7000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Working plantation estate stay"
+    },
+    {
+      "id": "stay-04",
+      "name": "The Fog Resort & Spa",
+      "category": "stay",
+      "lat": 10.105,
+      "lng": 77.05,
+      "avg_cost": 9500,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Hillside resort with valley-view rooms"
+    },
+    {
+      "id": "stay-05",
+      "name": "SpiceTree Munnar",
+      "category": "stay",
+      "lat": 10.09,
+      "lng": 77.07,
+      "avg_cost": 5500,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Mid-upper tier, near spice plantations"
+    },
+    {
+      "id": "stay-06",
+      "name": "The Tall Trees Munnar",
+      "category": "stay",
+      "lat": 10.08,
+      "lng": 77.06,
+      "avg_cost": 16000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Luxury tier, for the 'splurge' recommendation branch"
+    },
+    {
+      "id": "act-01",
+      "name": "Eravikulam National Park",
+      "category": "activity",
+      "lat": 10.1631,
+      "lng": 77.0518,
+      "avg_cost": 125,
+      "avg_duration_min": 120,
+      "opening_hours": "07:30-16:00",
+      "notes": "Home to the endangered Nilgiri Tahr; approach road prone to closure in heavy rain"
+    },
+    {
+      "id": "act-02",
+      "name": "Mattupetty Dam",
+      "category": "activity",
+      "lat": 10.1006,
+      "lng": 77.1276,
+      "avg_cost": 30,
+      "avg_duration_min": 60,
+      "opening_hours": "09:00-18:00"
+    },
+    {
+      "id": "act-03",
+      "name": "Kundala Lake",
+      "category": "activity",
+      "lat": 10.1467,
+      "lng": 77.1408,
+      "avg_cost": 300,
+      "avg_duration_min": 90,
+      "opening_hours": "09:00-17:00",
+      "notes": "Pedal-boating on the reservoir"
+    },
+    {
+      "id": "act-04",
+      "name": "Top Station Viewpoint",
+      "category": "activity",
+      "lat": 10.1858,
+      "lng": 77.1497,
+      "avg_cost": 0,
+      "avg_duration_min": 45,
+      "opening_hours": "08:00-18:00",
+      "notes": "Highest point on the Munnar-Kodaikanal road, Western Ghats view"
+    },
+    {
+      "id": "act-05",
+      "name": "Kannan Devan Tea Museum",
+      "category": "activity",
+      "lat": 10.0894,
+      "lng": 77.0625,
+      "avg_cost": 150,
+      "avg_duration_min": 75,
+      "opening_hours": "10:00-17:00"
+    },
+    {
+      "id": "act-06",
+      "name": "Attukad Waterfalls",
+      "category": "activity",
+      "lat": 10.0644,
+      "lng": 77.1108,
+      "avg_cost": 0,
+      "avg_duration_min": 60,
+      "opening_hours": "08:00-18:00"
+    },
+    {
+      "id": "act-07",
+      "name": "Echo Point",
+      "category": "activity",
+      "lat": 10.1258,
+      "lng": 77.1094,
+      "avg_cost": 0,
+      "avg_duration_min": 30,
+      "opening_hours": "08:00-18:00"
+    },
+    {
+      "id": "act-08",
+      "name": "Pothamedu Viewpoint",
+      "category": "activity",
+      "lat": 10.0736,
+      "lng": 77.0447,
+      "avg_cost": 0,
+      "avg_duration_min": 30,
+      "opening_hours": "24 hours"
+    },
+    {
+      "id": "act-09",
+      "name": "Spice Plantation Walk",
+      "category": "activity",
+      "lat": 10.08,
+      "lng": 77.05,
+      "avg_cost": 400,
+      "avg_duration_min": 120,
+      "opening_hours": "09:00-17:00",
+      "notes": "Guided walk through cardamom, pepper, and coffee plots"
+    },
+    {
+      "id": "act-10",
+      "name": "Anamudi Shola National Park Trek",
+      "category": "activity",
+      "lat": 10.16,
+      "lng": 77.06,
+      "avg_cost": 50,
+      "avg_duration_min": 90,
+      "opening_hours": "07:00-16:00"
+    },
+    {
+      "id": "eat-01",
+      "name": "Rapsy Restaurant",
+      "category": "eatery",
+      "lat": 10.0889,
+      "lng": 77.0595,
+      "avg_cost": 300,
+      "avg_duration_min": 45,
+      "opening_hours": "07:00-22:00",
+      "notes": "Kerala thalis, popular local spot"
+    },
+    {
+      "id": "eat-02",
+      "name": "Sierra Cafe",
+      "category": "eatery",
+      "lat": 10.087,
+      "lng": 77.062,
+      "avg_cost": 400,
+      "avg_duration_min": 45,
+      "opening_hours": "08:00-21:00"
+    },
+    {
+      "id": "eat-03",
+      "name": "Saravana Bhavan, Munnar",
+      "category": "eatery",
+      "lat": 10.09,
+      "lng": 77.061,
+      "avg_cost": 250,
+      "avg_duration_min": 40,
+      "opening_hours": "07:00-22:30"
+    },
+    {
+      "id": "eat-04",
+      "name": "Copper Castle Restaurant",
+      "category": "eatery",
+      "lat": 10.092,
+      "lng": 77.064,
+      "avg_cost": 600,
+      "avg_duration_min": 60,
+      "opening_hours": "07:30-22:30"
+    },
+    {
+      "id": "eat-05",
+      "name": "Eastend Restaurant",
+      "category": "eatery",
+      "lat": 10.0895,
+      "lng": 77.06,
+      "avg_cost": 500,
+      "avg_duration_min": 50,
+      "opening_hours": "07:00-22:00"
+    },
+    {
+      "id": "trans-01",
+      "name": "Cochin Airport (COK) to Munnar",
+      "category": "transport",
+      "lat": 10.152,
+      "lng": 76.4019,
+      "avg_cost": 3200,
+      "avg_duration_min": 180,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~110km, ghat road"
+    },
+    {
+      "id": "trans-02",
+      "name": "Munnar Town to Eravikulam National Park",
+      "category": "transport",
+      "lat": 10.13,
+      "lng": 77.056,
+      "avg_cost": 500,
+      "avg_duration_min": 30,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~15km, uphill approach road prone to landslide closures in monsoon"
+    },
+    {
+      "id": "trans-03",
+      "name": "Munnar to Top Station / Kundala Lake circuit",
+      "category": "transport",
+      "lat": 10.16,
+      "lng": 77.12,
+      "avg_cost": 1200,
+      "avg_duration_min": 75,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~40km circuit"
+    },
+    {
+      "id": "trans-04",
+      "name": "Munnar to Mattupetty / Echo Point",
+      "category": "transport",
+      "lat": 10.11,
+      "lng": 77.1,
+      "avg_cost": 450,
+      "avg_duration_min": 25,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~13km"
+    }
+  ]
+}

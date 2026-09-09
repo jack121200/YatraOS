@@ -1,0 +1,280 @@
+{
+  "city": "Goa",
+  "country": "India",
+  "currency": "INR",
+  "places": [
+    {
+      "id": "stay-01",
+      "name": "Zostel Goa (Anjuna)",
+      "category": "stay",
+      "lat": 15.5738,
+      "lng": 73.7404,
+      "avg_cost": 800,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Hostel, dorm + private rooms, backpacker crowd near Anjuna"
+    },
+    {
+      "id": "stay-02",
+      "name": "Cavala Hotel, Baga",
+      "category": "stay",
+      "lat": 15.556,
+      "lng": 73.7517,
+      "avg_cost": 2800,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Budget-mid, walking distance to Baga beach and nightlife"
+    },
+    {
+      "id": "stay-03",
+      "name": "Alila Diwa Goa",
+      "category": "stay",
+      "lat": 15.335,
+      "lng": 73.9186,
+      "avg_cost": 8500,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Mid-range resort near Majorda, South Goa"
+    },
+    {
+      "id": "stay-04",
+      "name": "Taj Fort Aguada Resort & Spa",
+      "category": "stay",
+      "lat": 15.4925,
+      "lng": 73.7724,
+      "avg_cost": 12500,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Upscale beachfront resort next to Fort Aguada"
+    },
+    {
+      "id": "stay-05",
+      "name": "W Goa, Vagator",
+      "category": "stay",
+      "lat": 15.5989,
+      "lng": 73.7345,
+      "avg_cost": 22000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Luxury tier, for the 'splurge' recommendation branch"
+    },
+    {
+      "id": "act-01",
+      "name": "Fort Aguada",
+      "category": "activity",
+      "lat": 15.4925,
+      "lng": 73.7739,
+      "avg_cost": 0,
+      "avg_duration_min": 60,
+      "opening_hours": "09:30-18:00",
+      "notes": "16th-century Portuguese fort, lighthouse and sea views"
+    },
+    {
+      "id": "act-02",
+      "name": "Baga Beach",
+      "category": "activity",
+      "lat": 15.5553,
+      "lng": 73.7517,
+      "avg_cost": 0,
+      "avg_duration_min": 120,
+      "opening_hours": "24 hours",
+      "notes": "Most popular North Goa beach strip"
+    },
+    {
+      "id": "act-03",
+      "name": "Anjuna Flea Market",
+      "category": "activity",
+      "lat": 15.5735,
+      "lng": 73.7405,
+      "avg_cost": 0,
+      "avg_duration_min": 120,
+      "opening_hours": "Wednesdays, 08:00-20:00",
+      "notes": "Weekly market, textiles/souvenirs, only open Wednesdays"
+    },
+    {
+      "id": "act-04",
+      "name": "Chapora Fort",
+      "category": "activity",
+      "lat": 15.6015,
+      "lng": 73.7358,
+      "avg_cost": 0,
+      "avg_duration_min": 45,
+      "opening_hours": "08:00-18:00",
+      "notes": "Hilltop laterite fort overlooking Chapora river mouth, sunset spot"
+    },
+    {
+      "id": "act-05",
+      "name": "Basilica of Bom Jesus",
+      "category": "activity",
+      "lat": 15.5009,
+      "lng": 73.9114,
+      "avg_cost": 0,
+      "avg_duration_min": 45,
+      "opening_hours": "09:00-18:30",
+      "notes": "UNESCO site, Old Goa, holds relics of St. Francis Xavier"
+    },
+    {
+      "id": "act-06",
+      "name": "Se Cathedral, Old Goa",
+      "category": "activity",
+      "lat": 15.5007,
+      "lng": 73.9127,
+      "avg_cost": 0,
+      "avg_duration_min": 30,
+      "opening_hours": "07:30-18:30",
+      "notes": "Adjacent to Basilica, easy to combine"
+    },
+    {
+      "id": "act-07",
+      "name": "Dudhsagar Waterfalls",
+      "category": "activity",
+      "lat": 15.3144,
+      "lng": 74.3144,
+      "avg_cost": 600,
+      "avg_duration_min": 240,
+      "opening_hours": "09:00-17:00",
+      "notes": "Jeep safari + entry, ~75km inland, trek route subject to forest dept closures in monsoon"
+    },
+    {
+      "id": "act-08",
+      "name": "Calangute Beach Water Sports",
+      "category": "activity",
+      "lat": 15.5439,
+      "lng": 73.7553,
+      "avg_cost": 1500,
+      "avg_duration_min": 90,
+      "opening_hours": "08:00-17:30",
+      "notes": "Parasailing/jet-ski operators along the beach"
+    },
+    {
+      "id": "act-09",
+      "name": "Tito's Lane Nightlife",
+      "category": "activity",
+      "lat": 15.5567,
+      "lng": 73.7519,
+      "avg_cost": 1000,
+      "avg_duration_min": 180,
+      "opening_hours": "19:00-03:00",
+      "notes": "Baga's club strip, cover charge + drinks"
+    },
+    {
+      "id": "act-10",
+      "name": "Sahakari Spice Farm Tour",
+      "category": "activity",
+      "lat": 15.4108,
+      "lng": 74.0866,
+      "avg_cost": 500,
+      "avg_duration_min": 150,
+      "opening_hours": "09:00-17:00",
+      "notes": "Guided plantation walk + traditional Goan lunch, near Ponda"
+    },
+    {
+      "id": "eat-01",
+      "name": "Vinayak Family Restaurant",
+      "category": "eatery",
+      "lat": 15.5836,
+      "lng": 73.7659,
+      "avg_cost": 350,
+      "avg_duration_min": 45,
+      "opening_hours": "12:00-16:00, 19:00-22:30",
+      "notes": "Legendary fish thali, Assagao"
+    },
+    {
+      "id": "eat-02",
+      "name": "Fisherman's Wharf, Ribandar",
+      "category": "eatery",
+      "lat": 15.5058,
+      "lng": 73.8434,
+      "avg_cost": 800,
+      "avg_duration_min": 75,
+      "opening_hours": "11:00-23:00"
+    },
+    {
+      "id": "eat-03",
+      "name": "Curlies Beach Shack, Anjuna",
+      "category": "eatery",
+      "lat": 15.5729,
+      "lng": 73.7397,
+      "avg_cost": 700,
+      "avg_duration_min": 90,
+      "opening_hours": "09:00-23:30",
+      "notes": "Iconic beach shack, sunset dining"
+    },
+    {
+      "id": "eat-04",
+      "name": "Britto's, Baga",
+      "category": "eatery",
+      "lat": 15.558,
+      "lng": 73.7524,
+      "avg_cost": 600,
+      "avg_duration_min": 60,
+      "opening_hours": "08:00-23:30"
+    },
+    {
+      "id": "eat-05",
+      "name": "Gunpowder, Assagao",
+      "category": "eatery",
+      "lat": 15.5849,
+      "lng": 73.7669,
+      "avg_cost": 900,
+      "avg_duration_min": 60,
+      "opening_hours": "12:30-15:30, 19:30-23:00",
+      "notes": "South Indian-inspired fine casual, popular with tourists"
+    },
+    {
+      "id": "eat-06",
+      "name": "Mum's Kitchen, Panjim",
+      "category": "eatery",
+      "lat": 15.4909,
+      "lng": 73.8278,
+      "avg_cost": 1200,
+      "avg_duration_min": 75,
+      "opening_hours": "12:00-15:30, 19:00-23:00",
+      "notes": "Traditional Goan home-style fine dining, splurge branch"
+    },
+    {
+      "id": "trans-01",
+      "name": "Goa Airport (GOI) to North Goa",
+      "category": "transport",
+      "lat": 15.3808,
+      "lng": 73.8314,
+      "avg_cost": 1200,
+      "avg_duration_min": 60,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~40km to Anjuna/Baga belt"
+    },
+    {
+      "id": "trans-02",
+      "name": "North Goa to Old Goa Churches",
+      "category": "transport",
+      "lat": 15.53,
+      "lng": 73.85,
+      "avg_cost": 500,
+      "avg_duration_min": 35,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~20km"
+    },
+    {
+      "id": "trans-03",
+      "name": "North Goa to Dudhsagar Falls",
+      "category": "transport",
+      "lat": 15.42,
+      "lng": 74.05,
+      "avg_cost": 1800,
+      "avg_duration_min": 120,
+      "opening_hours": "24 hours",
+      "notes": "Cab + shared jeep safari transfer, ~75km inland"
+    },
+    {
+      "id": "trans-04",
+      "name": "North Goa to Sahakari Spice Farm",
+      "category": "transport",
+      "lat": 15.46,
+      "lng": 73.97,
+      "avg_cost": 700,
+      "avg_duration_min": 55,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~30km, near Ponda"
+    }
+  ]
+}

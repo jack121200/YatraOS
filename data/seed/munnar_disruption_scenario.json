@@ -1,0 +1,152 @@
+{
+  "city": "Munnar",
+  "scenario_name": "Eravikulam National Park approach-road closure (landslide inspection)",
+  "trigger": {
+    "broken_node_id": "act-01",
+    "broken_node_name": "Eravikulam National Park",
+    "announced_at": "08:00",
+    "reason": "Forest department closes the Eravikulam approach road 09:00-11:30 for a landslide inspection after heavy overnight rain; reopens with restricted single-lane access at 11:30",
+    "affected_window": {
+      "start": "09:00",
+      "end": "12:30",
+      "duration_min": 210
+    }
+  },
+  "original_plan_for_window": {
+    "steps": [
+      {
+        "place_id": "trans-02",
+        "name": "Munnar Town to Eravikulam National Park",
+        "start": "09:00",
+        "duration_min": 30,
+        "cost": 500
+      },
+      {
+        "place_id": "act-01",
+        "name": "Eravikulam National Park (rushed, after 2hr checkpoint wait)",
+        "start": "11:30",
+        "duration_min": 60,
+        "cost": 125
+      }
+    ],
+    "total_cost": 625,
+    "total_duration_min": 210,
+    "quality_note": "Visit cut to 60 of its recommended 120 min after a 2-hour wait at the checkpoint for the landslide inspection to clear — misses much of the Nilgiri Tahr viewing window"
+  },
+  "recovery_plans": [
+    {
+      "id": "plan-a-reorder",
+      "label": "Reorder: tea museum and lunch first, full park visit after reopening",
+      "description": "Instead of waiting at the checkpoint, spend the closure window at the Tea Museum and over an unhurried lunch in town, then drive up right at the 11:30 reopening for the full recommended visit.",
+      "steps": [
+        {
+          "place_id": "act-05",
+          "name": "Kannan Devan Tea Museum",
+          "start": "09:00",
+          "duration_min": 75,
+          "cost": 150
+        },
+        {
+          "place_id": "eat-01",
+          "name": "Rapsy Restaurant (lunch)",
+          "start": "10:15",
+          "duration_min": 45,
+          "cost": 300
+        },
+        {
+          "place_id": "trans-02",
+          "name": "Munnar Town to Eravikulam National Park",
+          "start": "11:00",
+          "duration_min": 30,
+          "cost": 500
+        },
+        {
+          "place_id": "act-01",
+          "name": "Eravikulam National Park (full recommended visit)",
+          "start": "11:30",
+          "duration_min": 120,
+          "cost": 125
+        }
+      ],
+      "total_cost": 1075,
+      "total_duration_min": 270,
+      "cost_delta": 450,
+      "time_delta_min": 60,
+      "tradeoff": "Costs 450 more and runs about an hour longer than the original window, but delivers the museum, an unhurried lunch, and the FULL 120-minute park visit instead of a rushed 60-minute one with no wasted wait at the checkpoint.",
+      "best_for": "Travelers who prioritize a complete, unrushed Nilgiri Tahr sighting over sticking to a tight schedule"
+    },
+    {
+      "id": "plan-b-substitute",
+      "label": "Substitute: skip Eravikulam, do Mattupetty Dam and Echo Point",
+      "description": "Drop the park visit for today. Head to Mattupetty Dam and Echo Point instead — a different road, unaffected by the landslide closure.",
+      "steps": [
+        {
+          "place_id": "trans-04",
+          "name": "Munnar to Mattupetty / Echo Point",
+          "start": "09:00",
+          "duration_min": 25,
+          "cost": 450
+        },
+        {
+          "place_id": "act-02",
+          "name": "Mattupetty Dam",
+          "start": "09:25",
+          "duration_min": 60,
+          "cost": 30
+        },
+        {
+          "place_id": "act-07",
+          "name": "Echo Point",
+          "start": "10:25",
+          "duration_min": 30,
+          "cost": 0
+        }
+      ],
+      "total_cost": 480,
+      "total_duration_min": 115,
+      "cost_delta": -145,
+      "time_delta_min": -95,
+      "tradeoff": "Saves 145 rupees and finishes about 95 min earlier; trades the Nilgiri Tahr sanctuary for dam views and a quiet lakeside stop. Eravikulam can be attempted again tomorrow morning.",
+      "best_for": "Travelers on a tight schedule or content to skip the Tahr sanctuary"
+    },
+    {
+      "id": "plan-c-evening-pivot",
+      "label": "Pivot: full tea-and-spice cultural day with dinner folded in",
+      "description": "Since Eravikulam is a morning-only stop, spend the day at the Tea Museum and on a spice-plantation walk, then close with a proper sit-down dinner at Copper Castle instead of a rushed park visit.",
+      "steps": [
+        {
+          "place_id": "act-05",
+          "name": "Kannan Devan Tea Museum",
+          "start": "09:00",
+          "duration_min": 75,
+          "cost": 150
+        },
+        {
+          "place_id": "act-09",
+          "name": "Spice Plantation Walk",
+          "start": "10:15",
+          "duration_min": 120,
+          "cost": 400
+        },
+        {
+          "place_id": "eat-04",
+          "name": "Copper Castle Restaurant (dinner)",
+          "start": "19:00",
+          "duration_min": 60,
+          "cost": 600
+        }
+      ],
+      "total_cost": 1150,
+      "total_duration_min": 255,
+      "baseline_for_comparison": {
+        "note": "Compare against original window (625) plus a separate dinner you'd have paid anyway (~500 at Eastend)",
+        "baseline_total_inr": 1125
+      },
+      "cost_delta": 25,
+      "time_delta_min": 45,
+      "tradeoff": "Costs about 25 more and runs 45 min longer, but replaces a rushed, wait-heavy park visit with a full tea-and-spice cultural day plus a proper sit-down dinner folded in.",
+      "best_for": "Travelers who'd rather have a complete cultural day than gamble on a landslide-closure reopening"
+    }
+  ],
+  "currency": "INR"
+}

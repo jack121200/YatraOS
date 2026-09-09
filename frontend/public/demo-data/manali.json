@@ -1,0 +1,277 @@
+{
+  "city": "Manali",
+  "country": "India",
+  "currency": "INR",
+  "places": [
+    {
+      "id": "stay-01",
+      "name": "Zostel Manali",
+      "category": "stay",
+      "lat": 32.247,
+      "lng": 77.169,
+      "avg_cost": 900,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Hostel, dorm + private rooms, Old Manali"
+    },
+    {
+      "id": "stay-02",
+      "name": "Snow Valley Resorts, Manali",
+      "category": "stay",
+      "lat": 32.2396,
+      "lng": 77.1887,
+      "avg_cost": 3200,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Mid-range, near Mall Road"
+    },
+    {
+      "id": "stay-03",
+      "name": "The Himalayan, Manali",
+      "category": "stay",
+      "lat": 32.21,
+      "lng": 77.175,
+      "avg_cost": 6500,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Boutique riverside resort on Naggar Road"
+    },
+    {
+      "id": "stay-04",
+      "name": "Span Resort & Spa, Kullu",
+      "category": "stay",
+      "lat": 32.12,
+      "lng": 77.16,
+      "avg_cost": 8000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Riverside resort en route to Kullu"
+    },
+    {
+      "id": "stay-05",
+      "name": "Apple Country Resort, Naggar",
+      "category": "stay",
+      "lat": 32.195,
+      "lng": 77.18,
+      "avg_cost": 4000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Orchard-set resort near Naggar Castle"
+    },
+    {
+      "id": "stay-06",
+      "name": "Manuallaya Luxury Resort & Spa",
+      "category": "stay",
+      "lat": 32.245,
+      "lng": 77.175,
+      "avg_cost": 15000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Luxury tier, for the 'splurge' recommendation branch"
+    },
+    {
+      "id": "act-01",
+      "name": "Hidimba Devi Temple",
+      "category": "activity",
+      "lat": 32.2472,
+      "lng": 77.1892,
+      "avg_cost": 0,
+      "avg_duration_min": 40,
+      "opening_hours": "06:00-19:00",
+      "notes": "Ancient cedar-wood temple in a deodar forest"
+    },
+    {
+      "id": "act-02",
+      "name": "Old Manali cafe strip",
+      "category": "activity",
+      "lat": 32.25,
+      "lng": 77.169,
+      "avg_cost": 0,
+      "avg_duration_min": 90,
+      "opening_hours": "10:00-22:00",
+      "notes": "Backpacker cafes and shops across the Manalsu river"
+    },
+    {
+      "id": "act-03",
+      "name": "Solang Valley (ropeway + paragliding)",
+      "category": "activity",
+      "lat": 32.3172,
+      "lng": 77.1567,
+      "avg_cost": 1500,
+      "avg_duration_min": 180,
+      "opening_hours": "08:00-17:00",
+      "notes": "Lower-altitude, weather-resilient alternative to Rohtang"
+    },
+    {
+      "id": "act-04",
+      "name": "Rohtang Pass",
+      "category": "activity",
+      "lat": 32.3733,
+      "lng": 77.2497,
+      "avg_cost": 550,
+      "avg_duration_min": 240,
+      "opening_hours": "06:00-16:00 (seasonal, weather-dependent, permit required)",
+      "notes": "3,978m pass, ~51km from Manali; frequently closed by BRO for snow/landslide"
+    },
+    {
+      "id": "act-05",
+      "name": "Vashisht Hot Springs & Temple",
+      "category": "activity",
+      "lat": 32.2569,
+      "lng": 77.1935,
+      "avg_cost": 0,
+      "avg_duration_min": 60,
+      "opening_hours": "06:00-21:00"
+    },
+    {
+      "id": "act-06",
+      "name": "Jogini Waterfall Trek",
+      "category": "activity",
+      "lat": 32.265,
+      "lng": 77.205,
+      "avg_cost": 0,
+      "avg_duration_min": 150,
+      "opening_hours": "Daylight hours",
+      "notes": "Moderate trek from Vashisht village"
+    },
+    {
+      "id": "act-07",
+      "name": "Manu Temple, Old Manali",
+      "category": "activity",
+      "lat": 32.251,
+      "lng": 77.1685,
+      "avg_cost": 0,
+      "avg_duration_min": 30,
+      "opening_hours": "06:00-19:00"
+    },
+    {
+      "id": "act-08",
+      "name": "Naggar Castle",
+      "category": "activity",
+      "lat": 32.1289,
+      "lng": 77.1669,
+      "avg_cost": 100,
+      "avg_duration_min": 75,
+      "opening_hours": "10:00-17:00",
+      "notes": "15th-century timber-and-stone castle, Roerich Art Gallery nearby"
+    },
+    {
+      "id": "act-09",
+      "name": "Mall Road, Manali",
+      "category": "activity",
+      "lat": 32.2396,
+      "lng": 77.1887,
+      "avg_cost": 0,
+      "avg_duration_min": 90,
+      "opening_hours": "10:00-22:00",
+      "notes": "Shopping and evening stroll strip"
+    },
+    {
+      "id": "act-10",
+      "name": "Beas River Rafting, Kullu",
+      "category": "activity",
+      "lat": 31.98,
+      "lng": 77.15,
+      "avg_cost": 800,
+      "avg_duration_min": 120,
+      "opening_hours": "09:00-16:00, seasonal (Apr-Jun, Sep-Nov)"
+    },
+    {
+      "id": "eat-01",
+      "name": "Cafe 1947, Old Manali",
+      "category": "eatery",
+      "lat": 32.2495,
+      "lng": 77.1682,
+      "avg_cost": 500,
+      "avg_duration_min": 60,
+      "opening_hours": "09:00-23:00",
+      "notes": "Riverside Italian/Israeli-leaning menu, backpacker favorite"
+    },
+    {
+      "id": "eat-02",
+      "name": "Johnson's Cafe",
+      "category": "eatery",
+      "lat": 32.243,
+      "lng": 77.185,
+      "avg_cost": 700,
+      "avg_duration_min": 60,
+      "opening_hours": "08:00-22:30",
+      "notes": "Known for wood-fired trout"
+    },
+    {
+      "id": "eat-03",
+      "name": "Renaissance Restaurant",
+      "category": "eatery",
+      "lat": 32.24,
+      "lng": 77.188,
+      "avg_cost": 450,
+      "avg_duration_min": 45,
+      "opening_hours": "08:00-22:00"
+    },
+    {
+      "id": "eat-04",
+      "name": "Drifters' Cafe, Old Manali",
+      "category": "eatery",
+      "lat": 32.2505,
+      "lng": 77.167,
+      "avg_cost": 400,
+      "avg_duration_min": 45,
+      "opening_hours": "09:00-23:00"
+    },
+    {
+      "id": "eat-05",
+      "name": "Chopsticks Restaurant",
+      "category": "eatery",
+      "lat": 32.2405,
+      "lng": 77.1875,
+      "avg_cost": 550,
+      "avg_duration_min": 50,
+      "opening_hours": "11:00-22:30",
+      "notes": "Tibetan/Chinese, Mall Road"
+    },
+    {
+      "id": "trans-01",
+      "name": "Bhuntar Airport (KUU) to Manali",
+      "category": "transport",
+      "lat": 31.8767,
+      "lng": 77.154,
+      "avg_cost": 1800,
+      "avg_duration_min": 90,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~50km"
+    },
+    {
+      "id": "trans-02",
+      "name": "Manali to Solang Valley",
+      "category": "transport",
+      "lat": 32.29,
+      "lng": 77.165,
+      "avg_cost": 600,
+      "avg_duration_min": 35,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~13km"
+    },
+    {
+      "id": "trans-03",
+      "name": "Manali to Rohtang Pass",
+      "category": "transport",
+      "lat": 32.32,
+      "lng": 77.21,
+      "avg_cost": 2500,
+      "avg_duration_min": 120,
+      "opening_hours": "06:00-16:00 (seasonal, permit checkpoint at Gulaba)",
+      "notes": "Cab, ~51km mountain road, subject to BRO closures"
+    },
+    {
+      "id": "trans-04",
+      "name": "Manali to Vashisht / Old Manali",
+      "category": "transport",
+      "lat": 32.253,
+      "lng": 77.18,
+      "avg_cost": 200,
+      "avg_duration_min": 15,
+      "opening_hours": "24 hours",
+      "notes": "Cab or auto, ~3km"
+    }
+  ]
+}

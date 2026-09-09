@@ -1,0 +1,274 @@
+{
+  "city": "Bali",
+  "country": "Indonesia",
+  "currency": "IDR",
+  "places": [
+    {
+      "id": "stay-01",
+      "name": "Eden Hostel Canggu",
+      "category": "stay",
+      "lat": -8.6478,
+      "lng": 115.1385,
+      "avg_cost": 150000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Budget hostel, dorm + private rooms, Canggu surf area"
+    },
+    {
+      "id": "stay-02",
+      "name": "The Slow, Canggu",
+      "category": "stay",
+      "lat": -8.65,
+      "lng": 115.133,
+      "avg_cost": 1200000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Design-forward mid-range boutique hotel"
+    },
+    {
+      "id": "stay-03",
+      "name": "Alaya Resort Ubud",
+      "category": "stay",
+      "lat": -8.5069,
+      "lng": 115.2625,
+      "avg_cost": 1800000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Mid-range resort in central Ubud, jungle views"
+    },
+    {
+      "id": "stay-04",
+      "name": "Padma Resort Legian",
+      "category": "stay",
+      "lat": -8.7089,
+      "lng": 115.1653,
+      "avg_cost": 2500000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Beachfront resort, Legian/Kuta strip"
+    },
+    {
+      "id": "stay-05",
+      "name": "AYANA Resort Bali",
+      "category": "stay",
+      "lat": -8.7736,
+      "lng": 115.1497,
+      "avg_cost": 4500000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Clifftop resort near Jimbaran/Uluwatu"
+    },
+    {
+      "id": "stay-06",
+      "name": "Four Seasons Resort Bali at Sayan",
+      "category": "stay",
+      "lat": -8.497,
+      "lng": 115.254,
+      "avg_cost": 9000000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Luxury tier, for the 'splurge' recommendation branch"
+    },
+    {
+      "id": "act-01",
+      "name": "Tanah Lot Temple",
+      "category": "activity",
+      "lat": -8.6212,
+      "lng": 115.0868,
+      "avg_cost": 60000,
+      "avg_duration_min": 90,
+      "opening_hours": "07:00-19:00",
+      "notes": "Iconic sea temple, best at sunset"
+    },
+    {
+      "id": "act-02",
+      "name": "Uluwatu Temple + Kecak Fire Dance",
+      "category": "activity",
+      "lat": -8.8291,
+      "lng": 115.0849,
+      "avg_cost": 100000,
+      "avg_duration_min": 120,
+      "opening_hours": "08:00-19:00 (Kecak dance 18:00)",
+      "notes": "Clifftop temple, evening fire dance included"
+    },
+    {
+      "id": "act-03",
+      "name": "Tegallalang Rice Terraces",
+      "category": "activity",
+      "lat": -8.4312,
+      "lng": 115.2777,
+      "avg_cost": 25000,
+      "avg_duration_min": 75,
+      "opening_hours": "07:00-18:00"
+    },
+    {
+      "id": "act-04",
+      "name": "Ubud Monkey Forest",
+      "category": "activity",
+      "lat": -8.5188,
+      "lng": 115.2588,
+      "avg_cost": 80000,
+      "avg_duration_min": 60,
+      "opening_hours": "08:30-18:00"
+    },
+    {
+      "id": "act-05",
+      "name": "Mount Batur Sunrise Trek",
+      "category": "activity",
+      "lat": -8.2422,
+      "lng": 115.3752,
+      "avg_cost": 450000,
+      "avg_duration_min": 300,
+      "opening_hours": "Pre-dawn departure ~03:00, guide required",
+      "notes": "Active volcano; summit trail subject to closure on PVMBG alert-level changes"
+    },
+    {
+      "id": "act-06",
+      "name": "Tegenungan Waterfall",
+      "category": "activity",
+      "lat": -8.5763,
+      "lng": 115.2965,
+      "avg_cost": 20000,
+      "avg_duration_min": 60,
+      "opening_hours": "08:00-18:00"
+    },
+    {
+      "id": "act-07",
+      "name": "Campuhan Ridge Walk",
+      "category": "activity",
+      "lat": -8.504,
+      "lng": 115.255,
+      "avg_cost": 0,
+      "avg_duration_min": 60,
+      "opening_hours": "24 hours (best 06:00-09:00 or sunset)"
+    },
+    {
+      "id": "act-08",
+      "name": "Ubud Palace (Puri Saren Agung)",
+      "category": "activity",
+      "lat": -8.5069,
+      "lng": 115.2625,
+      "avg_cost": 0,
+      "avg_duration_min": 30,
+      "opening_hours": "08:00-19:00"
+    },
+    {
+      "id": "act-09",
+      "name": "Seminyak Beach Sunset",
+      "category": "activity",
+      "lat": -8.6913,
+      "lng": 115.1667,
+      "avg_cost": 0,
+      "avg_duration_min": 90,
+      "opening_hours": "24 hours"
+    },
+    {
+      "id": "act-10",
+      "name": "Besakih Temple (Mother Temple)",
+      "category": "activity",
+      "lat": -8.3742,
+      "lng": 115.4514,
+      "avg_cost": 75000,
+      "avg_duration_min": 90,
+      "opening_hours": "08:00-18:00",
+      "notes": "Bali's holiest temple complex, on Mount Agung's slopes"
+    },
+    {
+      "id": "eat-01",
+      "name": "Warung Babi Guling Ibu Oka",
+      "category": "eatery",
+      "lat": -8.5075,
+      "lng": 115.2612,
+      "avg_cost": 60000,
+      "avg_duration_min": 40,
+      "opening_hours": "11:00-15:00",
+      "notes": "Famous Balinese roast pork, Ubud"
+    },
+    {
+      "id": "eat-02",
+      "name": "Locavore, Ubud",
+      "category": "eatery",
+      "lat": -8.5083,
+      "lng": 115.2622,
+      "avg_cost": 850000,
+      "avg_duration_min": 120,
+      "opening_hours": "12:00-15:00, 18:00-23:00",
+      "notes": "Tasting-menu fine dining, splurge branch"
+    },
+    {
+      "id": "eat-03",
+      "name": "Motel Mexicola, Seminyak",
+      "category": "eatery",
+      "lat": -8.687,
+      "lng": 115.1685,
+      "avg_cost": 350000,
+      "avg_duration_min": 75,
+      "opening_hours": "11:00-01:00"
+    },
+    {
+      "id": "eat-04",
+      "name": "Bebek Bengil (Dirty Duck Diner), Ubud",
+      "category": "eatery",
+      "lat": -8.515,
+      "lng": 115.26,
+      "avg_cost": 150000,
+      "avg_duration_min": 60,
+      "opening_hours": "10:00-23:00"
+    },
+    {
+      "id": "eat-05",
+      "name": "La Lucciola, Seminyak",
+      "category": "eatery",
+      "lat": -8.6836,
+      "lng": 115.1618,
+      "avg_cost": 400000,
+      "avg_duration_min": 75,
+      "opening_hours": "09:00-23:00",
+      "notes": "Beachfront Italian, sunset dining"
+    },
+    {
+      "id": "trans-01",
+      "name": "Ngurah Rai Airport (DPS) to Seminyak/Canggu",
+      "category": "transport",
+      "lat": -8.7482,
+      "lng": 115.1672,
+      "avg_cost": 200000,
+      "avg_duration_min": 40,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~15km"
+    },
+    {
+      "id": "trans-02",
+      "name": "Seminyak to Ubud",
+      "category": "transport",
+      "lat": -8.6,
+      "lng": 115.2,
+      "avg_cost": 350000,
+      "avg_duration_min": 60,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~25km"
+    },
+    {
+      "id": "trans-03",
+      "name": "Ubud to Mount Batur",
+      "category": "transport",
+      "lat": -8.37,
+      "lng": 115.32,
+      "avg_cost": 450000,
+      "avg_duration_min": 75,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~30km, pre-dawn departure for sunrise trek"
+    },
+    {
+      "id": "trans-04",
+      "name": "Ubud to Uluwatu Temple",
+      "category": "transport",
+      "lat": -8.66,
+      "lng": 115.17,
+      "avg_cost": 500000,
+      "avg_duration_min": 90,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~40km"
+    }
+  ]
+}

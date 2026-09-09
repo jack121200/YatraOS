@@ -1,0 +1,138 @@
+{
+  "city": "Bangkok",
+  "scenario_name": "Damnoen Saduak van transfer suspended (driver strike)",
+  "trigger": {
+    "broken_node_id": "act-08",
+    "broken_node_name": "Damnoen Saduak Floating Market",
+    "announced_at": "06:00",
+    "reason": "Inter-provincial van and minibus drivers strike over fuel-surcharge disputes, suspending all shared van transfers on the Bangkok-Damnoen Saduak route for the day",
+    "affected_window": {
+      "start": "07:00",
+      "end": "13:00",
+      "duration_min": 360
+    }
+  },
+  "original_plan_for_window": {
+    "steps": [
+      {
+        "place_id": "trans-03",
+        "name": "Bangkok to Damnoen Saduak Floating Market",
+        "start": "07:00",
+        "duration_min": 90,
+        "cost": 800
+      },
+      {
+        "place_id": "act-08",
+        "name": "Damnoen Saduak Floating Market",
+        "start": "08:30",
+        "duration_min": 180,
+        "cost": 400
+      },
+      {
+        "place_id": "trans-03",
+        "name": "Damnoen Saduak back to Bangkok",
+        "start": "11:30",
+        "duration_min": 90,
+        "cost": 800
+      }
+    ],
+    "total_cost": 2000,
+    "total_duration_min": 360,
+    "quality_note": "Shared van transfer is the only affordable way to reach Damnoen Saduak; the strike leaves no transfer option today, and a private charter would cost several times more"
+  },
+  "recovery_plans": [
+    {
+      "id": "plan-a-reorder",
+      "label": "Reorder: old-city temples this morning, market rescheduled",
+      "description": "Stay in the city instead of chasing a rural transfer that isn't running. Do a Chinatown food walk plus Wat Arun and Wat Pho, all close together with no long transfer needed. Damnoen Saduak is rescheduled to a later day once the strike resolves.",
+      "steps": [
+        {
+          "place_id": "act-06",
+          "name": "Chinatown (Yaowarat) Street Food Walk",
+          "start": "07:00",
+          "duration_min": 120,
+          "cost": 0
+        },
+        {
+          "place_id": "act-03",
+          "name": "Wat Arun (Temple of Dawn)",
+          "start": "09:00",
+          "duration_min": 60,
+          "cost": 100
+        },
+        {
+          "place_id": "act-02",
+          "name": "Wat Pho (Reclining Buddha)",
+          "start": "10:00",
+          "duration_min": 60,
+          "cost": 200
+        }
+      ],
+      "total_cost": 300,
+      "total_duration_min": 240,
+      "cost_delta": -1700,
+      "time_delta_min": -120,
+      "tradeoff": "Saves 1700 baht and finishes 2 hours earlier since these old-city sites sit a short hop from each other with no long transfer; the floating market moves to a later day once driver transport normalizes.",
+      "best_for": "Travelers who want to stay flexible and reattempt the floating market once transport resumes"
+    },
+    {
+      "id": "plan-b-substitute",
+      "label": "Substitute: skip the floating market, do in-city heritage instead",
+      "description": "Drop the rural day trip entirely. Visit the Jim Thompson House and Erawan Shrine, both fully in-city and unaffected by the strike.",
+      "steps": [
+        {
+          "place_id": "act-05",
+          "name": "Jim Thompson House",
+          "start": "09:00",
+          "duration_min": 60,
+          "cost": 200
+        },
+        {
+          "place_id": "act-10",
+          "name": "Erawan Shrine",
+          "start": "10:00",
+          "duration_min": 30,
+          "cost": 0
+        }
+      ],
+      "total_cost": 200,
+      "total_duration_min": 90,
+      "cost_delta": -1800,
+      "time_delta_min": -270,
+      "tradeoff": "Saves 1800 baht and about 4.5 hours; trades the floating market for a silk-heritage house museum and a quick shrine visit, both unaffected by the strike.",
+      "best_for": "Budget-conscious travelers or those short on time who'd rather not chase a rural day trip"
+    },
+    {
+      "id": "plan-c-evening-pivot",
+      "label": "Pivot: relaxed midday, river dinner cruise in the evening",
+      "description": "Free up the whole morning. Grab a light lunch of Chinatown street food, then close the day with a scenic Chao Phraya dinner cruise instead of an early rural start.",
+      "steps": [
+        {
+          "place_id": "eat-05",
+          "name": "Chinatown Street Food Stalls (light lunch)",
+          "start": "12:00",
+          "duration_min": 60,
+          "cost": 300
+        },
+        {
+          "place_id": "act-07",
+          "name": "Chao Phraya River Dinner Cruise",
+          "start": "19:00",
+          "duration_min": 120,
+          "cost": 1200
+        }
+      ],
+      "total_cost": 1500,
+      "total_duration_min": 180,
+      "baseline_for_comparison": {
+        "note": "Compare against original window (2000) plus a separate dinner you'd have paid anyway (~400 at Krua Apsorn)",
+        "baseline_total_inr": 2400
+      },
+      "cost_delta": -900,
+      "time_delta_min": -180,
+      "tradeoff": "Costs 900 less than the original floating-market day plus a normal dinner would have; swaps an early rural start for relaxed street food and a scenic evening river cruise with dinner folded in.",
+      "best_for": "Travelers who'd rather sleep in and end the day with a memorable river cruise than chase a rescheduled market trip"
+    }
+  ],
+  "currency": "THB"
+}

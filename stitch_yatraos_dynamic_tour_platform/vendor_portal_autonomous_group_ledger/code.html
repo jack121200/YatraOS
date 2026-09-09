@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#895528", "surface-bright": "#fff8f1", "on-primary-container": "#ffd4bb", "on-primary-fixed": "#311300", "on-background": "#1e1b16", "surface-dim": "#e0d9d0", "on-tertiary-container": "#ffd5b7", "on-error-container": "#93000a", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb59a", "outline-variant": "#d7c2b7", "on-primary-fixed-variant": "#6c3a13", "surface-container-low": "#faf3ea", "on-secondary-fixed": "#380d00", "on-primary": "#ffffff", "on-surface-variant": "#52443b", "primary-container": "#8c532b", "secondary-fixed": "#ffdbcf", "surface-variant": "#e8e1d9", "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#fdb882", "inverse-surface": "#33302a", "tertiary": "#6d3e12", "inverse-on-surface": "#f7f0e7", "surface-tint": "#895029", "on-tertiary-fixed": "#2f1500", "surface-container-highest": "#e8e1d9", "background": "#fff8f1", "on-surface": "#1e1b16", "on-secondary-fixed-variant": "#7b2f0e", "surface-container": "#f4ede4", "outline": "#85746a", "secondary-container": "#ff946c", "on-error": "#ffffff", "surface": "#fff8f1", "surface-container-high": "#eee7de", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#6a3b10", "tertiary-fixed": "#ffdcc3", "error-container": "#ffdad6", "on-secondary-container": "#772b0a", "primary-fixed": "#ffdbc7", "secondary": "#9a4523", "primary": "#6f3c16", "primary-fixed-dim": "#ffb688", "inverse-primary": "#ffb688" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xs": "0.125rem", "space-lg": "1.5rem", "space-md": "1rem", "space-3xl": "4rem", "space-xl": "2rem", "margin-desktop": "2.5rem", "space-2xl": "3rem", "gutter-mobile": "1rem", "space-xs": "0.5rem", "gutter-desktop": "1.5rem", "margin-mobile": "1rem", "space-2xs": "0.25rem", "space-sm": "0.75rem" }, "fontFamily": { "title-lg": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "label-caps": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "display-lg": [ "Plus Jakarta Sans" ], "label-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "title-lg": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-lg-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-md": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-caps": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0.005em", "fontWeight": "400" } ], "display-lg": [ "44px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "label-lg": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter-desktop max-w-7xl mx-auto flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><img alt="YatraOS Biscoff Brandmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vm32tltYlhMmo39S55j3gRJ7aAkK3rVdkqfegRKB02n_SulE7x01CfJQ4_XfaGUe7hiYy9uoyIre9iIIf5Xnb6RUF2wHUTOgmiIaK4XjCl_sdHvjGW2sftrmzOzioWshuEasS2acVIfPrb6_xmZKWw8X1u7piJj1wncMeARNcAlmbh8qFVwDEToK6HHaysbAIhMHW0JFZAUtl-Sm44akQUja0vsZE4HB4Ms7CdlIdQvUKb3q7i87NA7Ih6"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">Yatra<span class="text-on-surface">OS</span></span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-3xs rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md"><span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span><span>Ripple Engine: v3.2 Active · 38ms latency · Graph Invariance Nominal</span></div></div><nav class="hidden lg:flex items-center gap-space-xs bg-surface-container-low p-space-3xs rounded-full shadow-[0_1px_4px_rgba(0,0,0,0.03)]" data-active-classes="bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-full px-space-md py-space-xs shadow-[0_2px_8px_rgba(140,83,43,0.15)]"><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="platform-overview" href="#">Platform Overview</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="traveller-live-graph" href="#">Traveller Live Graph</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="operator-radar" href="#">Operator Radar</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="vendor-ledger" href="#">Vendor &amp; Ledger</a></nav><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center bg-surface-container p-space-3xs rounded-full"><button class="px-space-sm py-space-3xs rounded-full font-label-caps text-label-caps uppercase bg-surface-container-lowest text-primary shadow-[0_1px_3px_rgba(0,0,0,0.06)]" type="button">Traveller</button><button class="px-space-sm py-space-3xs rounded-full font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface" type="button">Operator</button><button class="px-space-sm py-space-3xs rounded-full font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface" type="button">Vendor</button></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-all shadow-[0_4px_14px_rgba(140,83,43,0.22)]" type="button"><span class="material-symbols-outlined text-[18px]">bolt</span><span class="hidden md:inline">Deploy Auto-Heal</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-[0_2px_6px_rgba(111,60,22,0.2)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Banner & Mode Switcher -->
+<section class="w-full px-gutter-mobile md:px-gutter-desktop max-w-7xl mx-auto py-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>Settlement Mesh · Node Varanasi-North (VNSI-901)</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface-variant font-medium lowercase">consensus state: immutable</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-2xs">
+          Vendor Exchange &amp; Autonomous Group Ledger
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Real-time downstream rescheduling with guaranteed escrow payouts for local operators, paired with frictionless auto-rebalancing group expense splits.
+        </p>
+</div>
+<!-- Segment View Toggle -->
+<div class="inline-flex p-space-2xs rounded-full bg-surface-container shadow-sm self-start lg:self-center">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all shadow-sm bg-surface-container-lowest text-primary font-bold" id="tabBtnVendor" onclick="switchView('vendor')">
+<span class="material-symbols-outlined text-[18px]">sailing</span>
+<span>Vendor Operations</span>
+<span class="px-space-2xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps">1 Pending</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" id="tabBtnLedger" onclick="switchView('ledger')">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+<span>Group Ledger (Varanasi Odyssey)</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- VIEW 1: VENDOR OPERATIONS & SMART DISPATCH -->
+<div class="w-full max-w-7xl mx-auto px-gutter-mobile md:px-gutter-desktop space-y-space-lg pb-space-2xl transition-all" id="viewVendor">
+<!-- Partner Hero Card & Stats Bento -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Partner Profile & Escrow Summary -->
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 -mr-12 -mt-12 w-64 h-64 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-lg bg-surface-container-highest flex items-center justify-center shadow-inner text-primary">
+<span class="material-symbols-outlined text-[32px]">directions_boat</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-primary font-bold">Verified Heritage Partner</span>
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Ganges Heritage Cruises &amp; VIP Bajra Fleet</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Assi Ghat Berth #04 · Varanasi, Uttar Pradesh</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-2xs rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">Auto-Heal Escrow Connected</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-md">
+            YatraOS Autonomous Dispatch handles live river current adjustments, evening Ganga Aarti lock times, and flight delay ripple reconciliations automatically.
+          </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm mt-space-lg pt-space-md bg-surface-container/50 rounded-lg p-space-sm">
+<div>
+<div class="font-label-caps text-label-caps uppercase text-outline">Fleet Status</div>
+<div class="font-title-lg text-title-lg text-on-surface mt-0.5">3 / 4 Active</div>
+<div class="font-body-sm text-body-sm text-primary">1 in Turnaround</div>
+</div>
+<div>
+<div class="font-label-caps text-label-caps uppercase text-outline">Guaranteed Payouts</div>
+<div class="font-title-lg text-title-lg text-on-surface mt-0.5">₹34,800</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Today's settled total</div>
+</div>
+<div>
+<div class="font-label-caps text-label-caps uppercase text-outline">Holding Premium</div>
+<div class="font-title-lg text-title-lg text-primary mt-0.5">+₹1,600</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Delay indemnities</div>
+</div>
+<div>
+<div class="font-label-caps text-label-caps uppercase text-outline">Node Reliability</div>
+<div class="font-title-lg text-title-lg text-on-surface mt-0.5">99.8%</div>
+<div class="font-body-sm text-body-sm text-primary">Tier 1 Sovereign</div>
+</div>
+</div>
+</div>
+<!-- Live Escrow Holding Vault Card -->
+<div class="lg:col-span-4 bg-surface-container rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Razorpay Escrow Vault</span>
+<span class="material-symbols-outlined text-primary text-[20px]">lock_clock</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-label-md text-label-md text-on-surface-variant">Instant Liquid Balance</div>
+<div class="font-display-lg text-display-lg text-on-surface tracking-tight mt-0.5">₹18,450<span class="font-title-md text-title-md text-outline">.00</span></div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg mt-space-md space-y-space-2xs">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Trip #YTR-9821 Escrow Hold:</span>
+<span class="font-semibold text-on-surface">₹4,200</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Buffer Late Protection:</span>
+<span class="font-semibold text-primary">+₹200 (Locked)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm">
+<button class="w-full py-space-xs px-space-md rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary transition-all flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">currency_rupee</span>
+<span>Request Instant Payout to HDFC</span>
+</button>
+<div class="text-center font-label-md text-label-md text-outline mt-space-2xs">Zero clawback guarantee under Section 4.2 Autonomous Transit Rule</div>
+</div>
+</div>
+</div>
+<!-- Live Urgent Reschedule Notification Banner (Autonomous Slot Push) -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-md md:p-space-lg shadow-md relative overflow-hidden" id="urgentAlertCard">
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-primary"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pl-space-xs">
+<div class="space-y-space-2xs max-w-3xl">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase font-bold">
+              Autonomous Slot Push
+            </span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Trip #YTR-9821</span>
+<span class="text-outline">·</span>
+<span class="font-label-md text-label-md text-primary font-medium">Flight UK-611 Varanasi Inbound +90m Delay</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+            VIP Sunset Bajra Aarti Cruise: Requested Reschedule from 18:00 to 19:30
+          </h3>
+<div class="flex items-center gap-space-md flex-wrap pt-space-2xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>New Boarding Window: <strong>19:30 - 21:00</strong></span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span>
+<span>Pax: <strong>4 Adults (Aarav Group)</strong></span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px] text-primary">shield</span>
+<span>Guaranteed Compensation: <strong class="text-primary">100% Retained Fee (₹4,200) + ₹200 Late Holding Premium via Escrow</strong></span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-xs flex-wrap sm:flex-nowrap">
+<button class="flex-1 sm:flex-none px-space-lg py-space-xs rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all flex items-center justify-center gap-space-2xs" id="acceptSlotBtn" onclick="acceptNewSlot()">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Accept New Slot (19:30)</span>
+</button>
+<button class="flex-1 sm:flex-none px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-dim transition-all flex items-center justify-center gap-space-2xs" onclick="toggleCounterOfferModal()">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+<span>Counter Alternative</span>
+</button>
+</div>
+</div>
+<div class="hidden mt-space-md p-space-sm rounded-lg bg-surface-container-low text-primary font-label-lg text-label-lg flex items-center gap-space-xs" id="acceptedFeedback">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<span>Slot 19:30 Confirmed. Ganges Bajra #2 reserved. Escrow ₹4,400 marked for instant settlement at voyage completion.</span>
+</div>
+</div>
+<!-- Capacity Graph & Boat Lineup -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Hourly Capacity Utilization Visualizer -->
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-outline">Real-Time River Traffic &amp; Dock Allocation</span>
+<h4 class="font-title-lg text-title-lg text-on-surface">Daily Fleet Capacity Utilization</h4>
+</div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="w-3 h-3 rounded bg-primary"></span> Booked
+              <span class="w-3 h-3 rounded bg-primary-fixed-dim ml-2"></span> Rescheduled Slot
+              <span class="w-3 h-3 rounded bg-surface-dim ml-2"></span> Open Berth
+            </div>
+</div>
+<!-- Capacity Bar Chart SVG -->
+<div class="w-full mt-space-lg">
+<div class="h-44 w-full flex items-end justify-between gap-space-2xs pt-space-md">
+<!-- 14:00 -->
+<div class="flex-1 flex flex-col items-center gap-space-2xs h-full justify-end">
+<span class="font-label-caps text-label-caps text-outline">25%</span>
+<div class="w-full bg-surface-container-high rounded-t-sm h-[25%] flex flex-col justify-end">
+<div class="w-full bg-primary h-full rounded-t-sm"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">14:00</span>
+</div>
+<!-- 15:30 -->
+<div class="flex-1 flex flex-col items-center gap-space-2xs h-full justify-end">
+<span class="font-label-caps text-label-caps text-outline">40%</span>
+<div class="w-full bg-surface-container-high rounded-t-sm h-[40%] flex flex-col justify-end">
+<div class="w-full bg-primary h-full rounded-t-sm"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">15:30</span>
+</div>
+<!-- 17:00 (Aarti Rush) -->
+<div class="flex-1 flex flex-col items-center gap-space-2xs h-full justify-end">
+<span class="font-label-caps text-label-caps text-outline">95%</span>
+<div class="w-full bg-surface-container-high rounded-t-sm h-[95%] flex flex-col justify-end">
+<div class="w-full bg-primary h-full rounded-t-sm"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-1">17:00</span>
+</div>
+<!-- 18:00 (Original #YTR-9821 slot) -->
+<div class="flex-1 flex flex-col items-center gap-space-2xs h-full justify-end relative">
+<span class="font-label-caps text-label-caps text-primary">Moved</span>
+<div class="w-full bg-surface-container-highest rounded-t-sm h-[85%] relative overflow-hidden flex flex-col justify-end">
+<div class="w-full bg-primary h-[40%]"></div>
+<!-- Stippled shifted segment -->
+<div class="w-full bg-surface-dim h-[45%] opacity-60"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">18:00</span>
+</div>
+<!-- 19:30 (Target Reschedule Slot) -->
+<div class="flex-1 flex flex-col items-center gap-space-2xs h-full justify-end">
+<span class="font-label-caps text-label-caps text-primary font-bold">100%</span>
+<div class="w-full bg-surface-container-high rounded-t-sm h-[100%] flex flex-col justify-end relative">
+<div class="w-full bg-primary h-[60%]"></div>
+<div class="w-full bg-primary-container h-[40%] rounded-t-sm relative">
+<span class="absolute inset-0 flex items-center justify-center font-label-caps text-label-caps text-on-primary tracking-tighter">#9821</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold mt-1">19:30</span>
+</div>
+<!-- 21:00 (Night Stargazing) -->
+<div class="flex-1 flex flex-col items-center gap-space-2xs h-full justify-end">
+<span class="font-label-caps text-label-caps text-outline">50%</span>
+<div class="w-full bg-surface-container-high rounded-t-sm h-[50%] flex flex-col justify-end">
+<div class="w-full bg-primary h-full rounded-t-sm"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">21:00</span>
+</div>
+<!-- 22:30 -->
+<div class="flex-1 flex flex-col items-center gap-space-2xs h-full justify-end">
+<span class="font-label-caps text-label-caps text-outline">15%</span>
+<div class="w-full bg-surface-container-high rounded-t-sm h-[15%] flex flex-col justify-end">
+<div class="w-full bg-surface-variant h-full rounded-t-sm"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">22:30</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md text-on-surface-variant font-body-sm text-body-sm">
+<span>Current river flow: <strong>1.8 knots south</strong> · Ghat moorings stable</span>
+<span class="text-primary font-medium">Automatic berth swap handled by YatraOS</span>
+</div>
+</div>
+<!-- Fleet Visualizer & Captain Standby -->
+<div class="lg:col-span-4 bg-surface-container rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline">Active Craft</span>
+<span class="font-label-md text-label-md bg-surface-container-highest text-on-surface px-space-xs py-0.5 rounded">4 Craft in Fleet</span>
+</div>
+<div class="mt-space-md space-y-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">kayaking</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Bajra Mayur Pankhi</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Assigned: #YTR-9821 (19:30)</div>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-semibold">Repositioned</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">sailing</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Bajra Kashi Darshan</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">En route Dashashwamedh</div>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface font-label-caps text-label-caps font-semibold">On Course</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">anchor</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Solar Heritage Skiff</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Docked at Manikarnika</div>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container text-outline font-label-caps text-label-caps font-semibold">Standby</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">support_agent</span>
+<div class="font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Lead Boatmaster: Capt. Ramprasad</span>
+<div class="text-on-surface-variant">Mobile dispatch radio linked to group chauffeur</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- VIEW 2: AUTONOMOUS GROUP LEDGER & DYNAMIC SETTLEMENT -->
+<div class="hidden w-full max-w-7xl mx-auto px-gutter-mobile md:px-gutter-desktop space-y-space-lg pb-space-2xl transition-all" id="viewLedger">
+<!-- Itinerary Context Bar -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[24px]">temple_hindu</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-primary font-bold">Active Expedition</span>
+<span class="text-outline">·</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Varanasi Spiritual &amp; Cultural Odyssey</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">4 Travellers · 3 Days · Ledger ID #YTR-VNS-2025</h2>
+</div>
+</div>
+<!-- Total Pool Stats -->
+<div class="flex items-center gap-space-lg self-start md:self-center">
+<div>
+<div class="font-label-caps text-label-caps uppercase text-outline">Total Trip Baseline</div>
+<div class="font-title-lg text-title-lg text-on-surface">₹48,600</div>
+</div>
+<div>
+<div class="font-label-caps text-label-caps uppercase text-outline">UPI AutoPay Reserve</div>
+<div class="font-title-lg text-title-lg text-primary flex items-center gap-space-3xs">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>₹8,000</span>
+</div>
+</div>
+<div>
+<div class="font-label-caps text-label-caps uppercase text-outline">Status</div>
+<div class="font-title-lg text-title-lg text-on-surface flex items-center gap-space-3xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Auto-Balanced</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Auto-Rebalance Dynamic Events Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Live Ripple Event 1: Buffer Taxi Auto-Split -->
+<div class="lg:col-span-6 bg-surface-container rounded-xl p-space-lg shadow-sm space-y-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="p-1.5 rounded-full bg-surface-container-highest text-primary">
+<span class="material-symbols-outlined text-[18px]">local_taxi</span>
+</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">Auto-Split Incident #819</span>
+</div>
+<span class="font-label-md text-label-md px-space-xs py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant">Instant Split (4-way)</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Flight Delay Buffer Taxi Adjustment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Chauffeur holding window extended due to UK-611 Varanasi arrival delay. Incurred charge: <strong class="text-on-surface">+₹120</strong> buffer tariff.
+          </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface">
+<span>Deduction from shared UPI buffer pool:</span>
+<span class="font-bold text-primary">₹30 / person</span>
+</div>
+<div class="grid grid-cols-4 gap-space-2xs text-center font-label-caps text-label-caps uppercase text-on-surface-variant">
+<div class="p-1 bg-surface-container-low rounded">Aarav: -₹30</div>
+<div class="p-1 bg-surface-container-low rounded">Priya: -₹30</div>
+<div class="p-1 bg-surface-container-low rounded">Kabir: -₹30</div>
+<div class="p-1 bg-surface-container-low rounded">Ananya: -₹30</div>
+</div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-space-3xs text-primary">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+<span>No approvals requested (Under ₹250 threshold)</span>
+</span>
+<span class="font-label-caps text-label-caps uppercase text-outline">18:14 IST</span>
+</div>
+</div>
+<!-- Live Ripple Event 2: Selective Individual Opt-Out Refund -->
+<div class="lg:col-span-6 bg-surface-container rounded-xl p-space-lg shadow-sm space-y-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="p-1.5 rounded-full bg-surface-container-highest text-primary">
+<span class="material-symbols-outlined text-[18px]">directions_walk</span>
+</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">Individual Opt-Out Settlement</span>
+</div>
+<span class="font-label-md text-label-md px-space-xs py-0.5 rounded-full bg-surface-container-lowest text-primary font-semibold">Self-Contained Refund</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Morning Boat &amp; Heritage Alley Walk</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+<strong>Priya</strong> selected personal rest window. <strong class="text-on-surface">₹850 refund</strong> auto-credited directly back to Priya's original UPI handle.
+          </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm space-y-space-xs">
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface">
+<span>Group Core Protection:</span>
+<span class="font-semibold text-on-surface">Shared Haveli Suite untouched</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Aarav, Kabir &amp; Ananya per-head stay baseline:</span>
+<span class="font-semibold text-on-surface">₹12,150 unchanged</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-space-3xs text-primary">
+<span class="material-symbols-outlined text-[16px]">price_check</span>
+<span>Razorpay Escrow Txn #REF-88902 Verified</span>
+</span>
+<span class="font-label-caps text-label-caps uppercase text-outline">17:42 IST</span>
+</div>
+</div>
+</div>
+<!-- Member Balance Cards (4 Pax) -->
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Group Member Balances &amp; Real-time UPI Mandates</h3>
+<span class="font-label-md text-label-md text-on-surface-variant">Autonomous Settlement Threshold: ₹500/day</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Member 1: Aarav (Expedition Lead) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center font-title-md text-title-md">
+                  AK
+                </div>
+<div>
+<div class="font-title-md text-title-md text-on-surface flex items-center gap-1">
+<span>Aarav</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-primary">Leader</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">aarav@okhdfcbank</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+</div>
+<div class="mt-space-md space-y-space-2xs">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Paid Upfront:</span>
+<span class="font-semibold text-on-surface">₹24,300</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Net Share:</span>
+<span class="font-semibold text-on-surface">₹12,180</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">AutoPay Reserve:</span>
+<span class="font-semibold text-primary">Active (₹2,000 cap)</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm bg-surface-container-lowest p-space-xs rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline">Owed Back</span>
+<span class="font-title-md text-title-md text-primary font-bold">+₹12,120</span>
+</div>
+</div>
+</div>
+<!-- Member 2: Priya -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary font-bold flex items-center justify-center font-title-md text-title-md">
+                  PS
+                </div>
+<div>
+<div class="font-title-md text-title-md text-on-surface flex items-center gap-1">
+<span>Priya</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">priya@icici</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+</div>
+<div class="mt-space-md space-y-space-2xs">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Paid Upfront:</span>
+<span class="font-semibold text-on-surface">₹8,100</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Net Share:</span>
+<span class="font-semibold text-on-surface">₹11,330</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Adjustments:</span>
+<span class="font-semibold text-primary">-₹850 (Boat Opt-Out)</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm bg-surface-container-lowest p-space-xs rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline">To Settle</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">-₹3,230</span>
+</div>
+</div>
+</div>
+<!-- Member 3: Kabir -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary font-bold flex items-center justify-center font-title-md text-title-md">
+                  KM
+                </div>
+<div>
+<div class="font-title-md text-title-md text-on-surface flex items-center gap-1">
+<span>Kabir</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">kabir@axisbank</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+</div>
+<div class="mt-space-md space-y-space-2xs">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Paid Upfront:</span>
+<span class="font-semibold text-on-surface">₹8,100</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Net Share:</span>
+<span class="font-semibold text-on-surface">₹12,180</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">AutoPay Reserve:</span>
+<span class="font-semibold text-primary">Active (₹2,000 cap)</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm bg-surface-container-lowest p-space-xs rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline">To Settle</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">-₹4,080</span>
+</div>
+</div>
+</div>
+<!-- Member 4: Ananya -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary font-bold flex items-center justify-center font-title-md text-title-md">
+                  AR
+                </div>
+<div>
+<div class="font-title-md text-title-md text-on-surface flex items-center gap-1">
+<span>Ananya</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ananya@paytm</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+</div>
+<div class="mt-space-md space-y-space-2xs">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Paid Upfront:</span>
+<span class="font-semibold text-on-surface">₹8,100</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Net Share:</span>
+<span class="font-semibold text-on-surface">₹12,180</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">AutoPay Reserve:</span>
+<span class="font-semibold text-primary">Active (₹2,000 cap)</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm bg-surface-container-lowest p-space-xs rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline">To Settle</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">-₹4,080</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Complete Ledger Transaction Table -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Autonomous Expense Reconciliation Stream</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Every itinerary node auto-links to corresponding vendor invoices and live consensus proofs.</p>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-dim transition-all">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Download GST Invoices &amp; Split Log</span>
+</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="font-label-caps text-label-caps uppercase text-outline">
+<th class="py-space-xs font-semibold">Timestamp / Node</th>
+<th class="py-space-xs font-semibold">Item &amp; Vendor</th>
+<th class="py-space-xs font-semibold">Payer / Mode</th>
+<th class="py-space-xs font-semibold">Allocation Rule</th>
+<th class="py-space-xs font-semibold text-right">Amount</th>
+<th class="py-space-xs font-semibold text-right">Escrow Proof</th>
+</tr>
+</thead>
+<tbody class="space-y-space-xs">
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-space-sm font-medium text-on-surface">
+                19:30 Today
+                <div class="text-outline font-label-caps text-label-caps">Slot Shifted</div>
+</td>
+<td class="py-space-sm">
+<span class="font-semibold text-on-surface">VIP Evening Bajra Aarti</span>
+<div class="text-on-surface-variant">Ganges Heritage Cruises</div>
+</td>
+<td class="py-space-sm text-on-surface-variant">Trip Escrow Pool</td>
+<td class="py-space-sm"><span class="px-space-xs py-0.5 rounded bg-surface-container font-label-md text-label-md">Equal Split (4 Pax)</span></td>
+<td class="py-space-sm text-right font-semibold text-on-surface">₹4,400 <span class="text-primary text-xs">(+₹200 Premium)</span></td>
+<td class="py-space-sm text-right font-label-caps text-label-caps text-primary">#ESC-9821-OK</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-space-sm font-medium text-on-surface">
+                18:14 Today
+                <div class="text-outline font-label-caps text-label-caps">Flight UK-611 Ripple</div>
+</td>
+<td class="py-space-sm">
+<span class="font-semibold text-on-surface">Toyota Innova Crysta Buffer Time</span>
+<div class="text-on-surface-variant">Kashi Luxury Chauffeurs</div>
+</td>
+<td class="py-space-sm text-on-surface-variant">Buffer Reserve UPI</td>
+<td class="py-space-sm"><span class="px-space-xs py-0.5 rounded bg-surface-container font-label-md text-label-md">Auto-Split ₹30 x 4</span></td>
+<td class="py-space-sm text-right font-semibold text-on-surface">₹120</td>
+<td class="py-space-sm text-right font-label-caps text-label-caps text-primary">#UPI-819-AUTO</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-space-sm font-medium text-on-surface">
+                17:42 Today
+                <div class="text-outline font-label-caps text-label-caps">Selective Opt-Out</div>
+</td>
+<td class="py-space-sm">
+<span class="font-semibold text-on-surface">Heritage Alley &amp; Chai Tasting</span>
+<div class="text-on-surface-variant">Varanasi Cultural Walks</div>
+</td>
+<td class="py-space-sm text-on-surface-variant">Refunded to Priya</td>
+<td class="py-space-sm"><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-md text-label-md">1 Pax Refund (-₹850)</span></td>
+<td class="py-space-sm text-right font-semibold text-primary">-₹850</td>
+<td class="py-space-sm text-right font-label-caps text-label-caps text-primary">#REF-88902</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-space-sm font-medium text-on-surface">
+                14:00 Today
+                <div class="text-outline font-label-caps text-label-caps">Initial Deposit</div>
+</td>
+<td class="py-space-sm">
+<span class="font-semibold text-on-surface">BrijRama Palace Heritage Suite (3N)</span>
+<div class="text-on-surface-variant">Direct Property Integration</div>
+</td>
+<td class="py-space-sm text-on-surface-variant">Aarav (Lead Card)</td>
+<td class="py-space-sm"><span class="px-space-xs py-0.5 rounded bg-surface-container font-label-md text-label-md">Equal Split (4 Pax)</span></td>
+<td class="py-space-sm text-right font-semibold text-on-surface">₹36,000</td>
+<td class="py-space-sm text-right font-label-caps text-label-caps text-primary">#HTL-VNS-091</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Counter Offer Modal (Interactive Overlay Component) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-on-surface/40 backdrop-blur-sm" id="counterModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-2xl space-y-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Propose Alternative Slot</h3>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-dim" onclick="toggleCounterOfferModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        If 19:30 conflicts with your Ganga Aarti turnaround, select your next best open window. YatraOS will notify the chauffeur and Aarav Group instantly.
+      </p>
+<div class="space-y-space-xs">
+<label class="font-label-caps text-label-caps uppercase text-outline">Select Available Window</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="p-space-sm rounded-lg bg-surface-container-low text-left hover:bg-surface-container transition-all">
+<div class="font-title-md text-title-md text-on-surface">20:15 - 21:45</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Post Aarti Starlight Cruise</div>
+</button>
+<button class="p-space-sm rounded-lg bg-surface-container-low text-left hover:bg-surface-container transition-all">
+<div class="font-title-md text-title-md text-on-surface">Tomorrow 05:30</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Subah-e-Banaras Sunrise</div>
+</button>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container text-primary font-body-sm text-body-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Late holding fee (₹200) remains retained in your favor regardless of slot chosen.</span>
+</div>
+<div class="flex items-center justify-end gap-space-xs pt-space-xs">
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg" onclick="toggleCounterOfferModal()">Cancel</button>
+<button class="px-space-lg py-space-xs rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm" onclick="sendCounterOffer()">Send Proposal</button>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Script -->
+<script>
+    function switchView(view) {
+      const vendorSection = document.getElementById('viewVendor');
+      const ledgerSection = document.getElementById('viewLedger');
+      const btnVendor = document.getElementById('tabBtnVendor');
+      const btnLedger = document.getElementById('tabBtnLedger');
+
+      if (view === 'vendor') {
+        vendorSection.classList.remove('hidden');
+        ledgerSection.classList.add('hidden');
+
+        btnVendor.className = 'flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all shadow-sm bg-surface-container-lowest text-primary font-bold';
+        btnLedger.className = 'flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all';
+      } else {
+        vendorSection.classList.add('hidden');
+        ledgerSection.classList.remove('hidden');
+
+        btnLedger.className = 'flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all shadow-sm bg-surface-container-lowest text-primary font-bold';
+        btnVendor.className = 'flex items-center gap-space-xs px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all';
+      }
+    }
+
+    function acceptNewSlot() {
+      const btn = document.getElementById('acceptSlotBtn');
+      const feedback = document.getElementById('acceptedFeedback');
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span> <span>Slot 19:30 Locked</span>';
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-tertiary-container', 'text-on-tertiary-container', 'pointer-events-none');
+      feedback.classList.remove('hidden');
+    }
+
+    function toggleCounterOfferModal() {
+      const modal = document.getElementById('counterModal');
+      modal.classList.toggle('hidden');
+    }
+
+    function sendCounterOffer() {
+      toggleCounterOfferModal();
+      const feedback = document.getElementById('acceptedFeedback');
+      feedback.classList.remove('hidden');
+      feedback.innerHTML = '<span class="material-symbols-outlined text-[20px]">send</span> <span>Counter-proposal transmitted to YatraOS Autonomous Router. Standby for traveller confirmation.</span>';
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-2xl shadow-[0_-1px_8px_rgba(0,0,0,0.03)]"><div class="w-full max-w-7xl mx-auto px-gutter-desktop py-space-md flex flex-col md:flex-row items-center justify-between gap-space-md font-label-md text-label-md text-on-surface-variant"><div class="flex items-center gap-space-lg flex-wrap justify-center"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Active Nodes</span><span class="font-title-md text-title-md text-on-surface">14,290</span></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Downstream Heals</span><span class="font-title-md text-title-md text-on-surface">99.4%</span></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Consensus</span><span class="font-title-md text-title-md text-on-surface">Verified</span></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span><span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">NetworkX Layer</span><span class="font-title-md text-title-md text-primary">Online</span></div></div><div class="text-center md:text-right text-on-surface-variant font-body-sm text-body-sm">© 2025 YatraOS Autonomous Travel Intelligence. All rights reserved.</div></div></footer></body></html>

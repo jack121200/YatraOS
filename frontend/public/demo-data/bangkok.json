@@ -1,0 +1,286 @@
+{
+  "city": "Bangkok",
+  "country": "Thailand",
+  "currency": "THB",
+  "places": [
+    {
+      "id": "stay-01",
+      "name": "Lub d Bangkok Siam",
+      "category": "stay",
+      "lat": 13.7466,
+      "lng": 100.5347,
+      "avg_cost": 700,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Hostel, dorm + private rooms, Siam area"
+    },
+    {
+      "id": "stay-02",
+      "name": "ibis Styles Bangkok Khaosan Viengtai",
+      "category": "stay",
+      "lat": 13.7599,
+      "lng": 100.4977,
+      "avg_cost": 1800,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Budget-mid chain, steps from Khao San Road"
+    },
+    {
+      "id": "stay-03",
+      "name": "Riva Surya Bangkok",
+      "category": "stay",
+      "lat": 13.7599,
+      "lng": 100.4931,
+      "avg_cost": 3500,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Riverside boutique hotel near old city"
+    },
+    {
+      "id": "stay-04",
+      "name": "Chatrium Hotel Riverside Bangkok",
+      "category": "stay",
+      "lat": 13.7043,
+      "lng": 100.5075,
+      "avg_cost": 4500,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Mid-upper tier on the Chao Phraya"
+    },
+    {
+      "id": "stay-05",
+      "name": "Siam Kempinski Hotel Bangkok",
+      "category": "stay",
+      "lat": 13.7469,
+      "lng": 100.5347,
+      "avg_cost": 8500,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Upscale, adjacent to Siam Paragon"
+    },
+    {
+      "id": "stay-06",
+      "name": "Mandarin Oriental Bangkok",
+      "category": "stay",
+      "lat": 13.7234,
+      "lng": 100.5141,
+      "avg_cost": 18000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Luxury tier, for the 'splurge' recommendation branch"
+    },
+    {
+      "id": "act-01",
+      "name": "Grand Palace & Wat Phra Kaew",
+      "category": "activity",
+      "lat": 13.75,
+      "lng": 100.4913,
+      "avg_cost": 500,
+      "avg_duration_min": 120,
+      "opening_hours": "08:30-15:30",
+      "notes": "Flagship heritage site, strict dress code enforced"
+    },
+    {
+      "id": "act-02",
+      "name": "Wat Pho (Reclining Buddha)",
+      "category": "activity",
+      "lat": 13.7465,
+      "lng": 100.493,
+      "avg_cost": 200,
+      "avg_duration_min": 60,
+      "opening_hours": "08:00-18:30",
+      "notes": "Adjacent to Grand Palace, easy to combine"
+    },
+    {
+      "id": "act-03",
+      "name": "Wat Arun (Temple of Dawn)",
+      "category": "activity",
+      "lat": 13.7437,
+      "lng": 100.4889,
+      "avg_cost": 100,
+      "avg_duration_min": 60,
+      "opening_hours": "08:00-18:00",
+      "notes": "Cross-river ferry from Wat Pho pier"
+    },
+    {
+      "id": "act-04",
+      "name": "Chatuchak Weekend Market",
+      "category": "activity",
+      "lat": 13.7999,
+      "lng": 100.55,
+      "avg_cost": 0,
+      "avg_duration_min": 180,
+      "opening_hours": "Sat-Sun 09:00-18:00",
+      "notes": "One of the world's largest weekend markets"
+    },
+    {
+      "id": "act-05",
+      "name": "Jim Thompson House",
+      "category": "activity",
+      "lat": 13.7495,
+      "lng": 100.5282,
+      "avg_cost": 200,
+      "avg_duration_min": 60,
+      "opening_hours": "09:00-18:00",
+      "notes": "Silk entrepreneur's traditional Thai house museum"
+    },
+    {
+      "id": "act-06",
+      "name": "Chinatown (Yaowarat) Street Food Walk",
+      "category": "activity",
+      "lat": 13.7404,
+      "lng": 100.5088,
+      "avg_cost": 0,
+      "avg_duration_min": 120,
+      "opening_hours": "Stalls active 07:00-01:00, peak evening"
+    },
+    {
+      "id": "act-07",
+      "name": "Chao Phraya River Dinner Cruise",
+      "category": "activity",
+      "lat": 13.722,
+      "lng": 100.514,
+      "avg_cost": 1200,
+      "avg_duration_min": 120,
+      "opening_hours": "Evening departures ~19:00-21:00"
+    },
+    {
+      "id": "act-08",
+      "name": "Damnoen Saduak Floating Market",
+      "category": "activity",
+      "lat": 13.517,
+      "lng": 99.955,
+      "avg_cost": 400,
+      "avg_duration_min": 180,
+      "opening_hours": "07:00-12:00 (best before 09:00)",
+      "notes": "~110km from Bangkok, reached by shared van; route subject to driver-strike disruptions"
+    },
+    {
+      "id": "act-09",
+      "name": "Wat Traimit (Golden Buddha)",
+      "category": "activity",
+      "lat": 13.7398,
+      "lng": 100.5139,
+      "avg_cost": 100,
+      "avg_duration_min": 45,
+      "opening_hours": "08:00-17:00"
+    },
+    {
+      "id": "act-10",
+      "name": "Erawan Shrine",
+      "category": "activity",
+      "lat": 13.7444,
+      "lng": 100.5406,
+      "avg_cost": 0,
+      "avg_duration_min": 30,
+      "opening_hours": "06:00-23:00"
+    },
+    {
+      "id": "act-11",
+      "name": "Rajadamnern Muay Thai Stadium",
+      "category": "activity",
+      "lat": 13.7639,
+      "lng": 100.4977,
+      "avg_cost": 1500,
+      "avg_duration_min": 150,
+      "opening_hours": "Fight nights ~18:00-23:00 (Mon/Wed/Thu/Fri/Sat vary)"
+    },
+    {
+      "id": "eat-01",
+      "name": "Thipsamai Pad Thai",
+      "category": "eatery",
+      "lat": 13.7539,
+      "lng": 100.5013,
+      "avg_cost": 150,
+      "avg_duration_min": 40,
+      "opening_hours": "17:00-02:00",
+      "notes": "Legendary pad thai since 1966"
+    },
+    {
+      "id": "eat-02",
+      "name": "Jay Fai",
+      "category": "eatery",
+      "lat": 13.753,
+      "lng": 100.504,
+      "avg_cost": 1000,
+      "avg_duration_min": 60,
+      "opening_hours": "14:00-21:00 (closed Sun-Mon)",
+      "notes": "Michelin-starred street food, crab omelette"
+    },
+    {
+      "id": "eat-03",
+      "name": "Krua Apsorn",
+      "category": "eatery",
+      "lat": 13.762,
+      "lng": 100.499,
+      "avg_cost": 400,
+      "avg_duration_min": 50,
+      "opening_hours": "10:30-20:30"
+    },
+    {
+      "id": "eat-04",
+      "name": "Baan Khanitha",
+      "category": "eatery",
+      "lat": 13.725,
+      "lng": 100.535,
+      "avg_cost": 800,
+      "avg_duration_min": 75,
+      "opening_hours": "11:00-23:00",
+      "notes": "Upscale Thai fine dining, splurge branch"
+    },
+    {
+      "id": "eat-05",
+      "name": "Chinatown Street Food Stalls, Yaowarat",
+      "category": "eatery",
+      "lat": 13.7404,
+      "lng": 100.5088,
+      "avg_cost": 300,
+      "avg_duration_min": 60,
+      "opening_hours": "17:00-01:00"
+    },
+    {
+      "id": "trans-01",
+      "name": "Suvarnabhumi Airport (BKK) to Sukhumvit/Siam",
+      "category": "transport",
+      "lat": 13.69,
+      "lng": 100.7501,
+      "avg_cost": 400,
+      "avg_duration_min": 45,
+      "opening_hours": "24 hours",
+      "notes": "Taxi, ~30km"
+    },
+    {
+      "id": "trans-02",
+      "name": "Siam to Old City (Grand Palace area)",
+      "category": "transport",
+      "lat": 13.748,
+      "lng": 100.51,
+      "avg_cost": 150,
+      "avg_duration_min": 25,
+      "opening_hours": "24 hours",
+      "notes": "Taxi or BTS+boat, ~5km"
+    },
+    {
+      "id": "trans-03",
+      "name": "Bangkok to Damnoen Saduak Floating Market",
+      "category": "transport",
+      "lat": 13.6,
+      "lng": 100.2,
+      "avg_cost": 800,
+      "avg_duration_min": 90,
+      "opening_hours": "24 hours",
+      "notes": "Shared van transfer, ~110km, subject to driver-strike disruption"
+    },
+    {
+      "id": "trans-04",
+      "name": "Old City to Chinatown",
+      "category": "transport",
+      "lat": 13.744,
+      "lng": 100.5,
+      "avg_cost": 100,
+      "avg_duration_min": 15,
+      "opening_hours": "24 hours",
+      "notes": "Tuk-tuk or taxi, ~3km"
+    }
+  ]
+}

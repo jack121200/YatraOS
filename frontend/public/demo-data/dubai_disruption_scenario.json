@@ -1,0 +1,152 @@
+{
+  "city": "Dubai",
+  "scenario_name": "Desert Safari suspension (sandstorm advisory)",
+  "trigger": {
+    "broken_node_id": "act-09",
+    "broken_node_name": "Desert Safari with BBQ Dinner",
+    "announced_at": "13:00",
+    "reason": "UAE National Center of Meteorology issues a sandstorm (shamal wind) advisory for the desert conservation area; safari operators suspend all afternoon and evening departures for safety",
+    "affected_window": {
+      "start": "15:30",
+      "end": "21:30",
+      "duration_min": 360
+    }
+  },
+  "original_plan_for_window": {
+    "steps": [
+      {
+        "place_id": "trans-03",
+        "name": "Downtown to Desert Safari Meeting Point",
+        "start": "15:30",
+        "duration_min": 60,
+        "cost": 150
+      },
+      {
+        "place_id": "act-09",
+        "name": "Desert Safari with BBQ Dinner",
+        "start": "16:30",
+        "duration_min": 300,
+        "cost": 250
+      }
+    ],
+    "total_cost": 400,
+    "total_duration_min": 360,
+    "quality_note": "Entire evening was built around the safari; cancelled outright by the sandstorm advisory, with no partial or on-site indoor alternative"
+  },
+  "recovery_plans": [
+    {
+      "id": "plan-a-reorder",
+      "label": "Reorder: Burj Khalifa and Dubai Mall evening instead",
+      "description": "Stay downtown and safe from the sandstorm. Spend the evening at Dubai Mall and the Dubai Fountain show, go up Burj Khalifa at dusk, then have dinner at At.mosphere in the same tower.",
+      "steps": [
+        {
+          "place_id": "act-02",
+          "name": "Dubai Mall + Dubai Fountain Show",
+          "start": "15:30",
+          "duration_min": 120,
+          "cost": 0
+        },
+        {
+          "place_id": "act-01",
+          "name": "Burj Khalifa At the Top",
+          "start": "17:30",
+          "duration_min": 75,
+          "cost": 179
+        },
+        {
+          "place_id": "eat-04",
+          "name": "At.mosphere (Burj Khalifa dinner)",
+          "start": "18:45",
+          "duration_min": 90,
+          "cost": 500
+        }
+      ],
+      "total_cost": 679,
+      "total_duration_min": 285,
+      "cost_delta": 279,
+      "time_delta_min": -75,
+      "tradeoff": "Costs 279 more (Burj Khalifa ticket plus fine-dining dinner vs. the safari's flat BBQ price) but finishes 75 min earlier and keeps you entirely indoors downtown, safe from the sandstorm.",
+      "best_for": "Travelers who want a landmark-heavy indoor evening and don't mind paying a bit more for Burj Khalifa access"
+    },
+    {
+      "id": "plan-b-substitute",
+      "label": "Substitute: skip the desert, explore old Dubai souks",
+      "description": "Drop the desert entirely for today. Browse the Gold and Spice Souks in Deira, walk the Al Fahidi Historic District, then have a cheap, legendary dinner at Ravi Restaurant.",
+      "steps": [
+        {
+          "place_id": "trans-04",
+          "name": "Downtown to Deira Souks",
+          "start": "15:30",
+          "duration_min": 20,
+          "cost": 30
+        },
+        {
+          "place_id": "act-07",
+          "name": "Gold & Spice Souk, Deira",
+          "start": "15:50",
+          "duration_min": 90,
+          "cost": 0
+        },
+        {
+          "place_id": "act-08",
+          "name": "Al Fahidi Historic District + Dubai Museum",
+          "start": "17:20",
+          "duration_min": 75,
+          "cost": 30
+        },
+        {
+          "place_id": "eat-02",
+          "name": "Ravi Restaurant, Karama (dinner)",
+          "start": "18:35",
+          "duration_min": 40,
+          "cost": 35
+        }
+      ],
+      "total_cost": 95,
+      "total_duration_min": 225,
+      "cost_delta": -305,
+      "time_delta_min": -135,
+      "tradeoff": "Saves 305 and over 2 hours; trades dune bashing and a Bedouin BBQ for old Dubai's souks, heritage architecture, and a legendary cheap-eats dinner.",
+      "best_for": "Budget-conscious travelers, or those who'd rather explore old Dubai than the desert"
+    },
+    {
+      "id": "plan-c-evening-pivot",
+      "label": "Pivot: Marina Walk stroll and overwater dinner at Pierchic",
+      "description": "Since the safari included dinner, replace it with a scenic evening instead — a stroll along Dubai Marina Walk followed by overwater fine dining at Pierchic.",
+      "steps": [
+        {
+          "place_id": "trans-02",
+          "name": "Downtown to Dubai Marina",
+          "start": "17:00",
+          "duration_min": 30,
+          "cost": 70
+        },
+        {
+          "place_id": "act-05",
+          "name": "Dubai Marina Walk",
+          "start": "17:30",
+          "duration_min": 90,
+          "cost": 0
+        },
+        {
+          "place_id": "eat-03",
+          "name": "Pierchic, Madinat Jumeirah (dinner)",
+          "start": "19:30",
+          "duration_min": 90,
+          "cost": 450
+        }
+      ],
+      "total_cost": 520,
+      "total_duration_min": 210,
+      "baseline_for_comparison": {
+        "note": "Compare against the original safari total (400), which already had dinner bundled in",
+        "baseline_total_inr": 400
+      },
+      "cost_delta": 120,
+      "time_delta_min": -150,
+      "tradeoff": "Costs 120 more than the cancelled safari (which had bundled dinner) but finishes 150 min earlier; swaps dune bashing for a scenic marina stroll and an overwater fine-dining dinner.",
+      "best_for": "Travelers who want a romantic, scenic evening rather than another adventure-sport substitute"
+    }
+  ],
+  "currency": "AED"
+}

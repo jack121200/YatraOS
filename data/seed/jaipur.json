@@ -1,0 +1,266 @@
+{
+  "city": "Jaipur",
+  "country": "India",
+  "currency": "INR",
+  "places": [
+    {
+      "id": "stay-01",
+      "name": "Hotel Pearl Palace",
+      "category": "stay",
+      "lat": 26.9089,
+      "lng": 75.8112,
+      "avg_cost": 2200,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Budget heritage boutique hotel, near Chandpole"
+    },
+    {
+      "id": "stay-02",
+      "name": "Zostel Jaipur",
+      "category": "stay",
+      "lat": 26.9077,
+      "lng": 75.808,
+      "avg_cost": 900,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Hostel, dorm + private rooms, backpacker crowd"
+    },
+    {
+      "id": "stay-03",
+      "name": "Alsisar Haveli",
+      "category": "stay",
+      "lat": 26.9187,
+      "lng": 75.8188,
+      "avg_cost": 5500,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Heritage haveli hotel, walking distance to old city"
+    },
+    {
+      "id": "stay-04",
+      "name": "ibis Jaipur City",
+      "category": "stay",
+      "lat": 26.8895,
+      "lng": 75.8058,
+      "avg_cost": 3800,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Mid-range chain, near Sindhi Camp bus stand"
+    },
+    {
+      "id": "stay-05",
+      "name": "Taj Jai Mahal Palace",
+      "category": "stay",
+      "lat": 26.9036,
+      "lng": 75.7969,
+      "avg_cost": 14000,
+      "avg_duration_min": null,
+      "opening_hours": "24 hours",
+      "notes": "Luxury tier, for the 'splurge' recommendation branch"
+    },
+    {
+      "id": "act-01",
+      "name": "Amber Fort",
+      "category": "activity",
+      "lat": 26.9855,
+      "lng": 75.8513,
+      "avg_cost": 200,
+      "avg_duration_min": 150,
+      "opening_hours": "08:00-17:30",
+      "notes": "Flagship heritage site, ~11km from old city, best pre-9am or after 4pm"
+    },
+    {
+      "id": "act-02",
+      "name": "Hawa Mahal",
+      "category": "activity",
+      "lat": 26.9239,
+      "lng": 75.8267,
+      "avg_cost": 50,
+      "avg_duration_min": 45,
+      "opening_hours": "09:00-16:30",
+      "notes": "Photo-stop landmark, quick visit"
+    },
+    {
+      "id": "act-03",
+      "name": "City Palace",
+      "category": "activity",
+      "lat": 26.9258,
+      "lng": 75.8237,
+      "avg_cost": 300,
+      "avg_duration_min": 90,
+      "opening_hours": "09:30-17:00"
+    },
+    {
+      "id": "act-04",
+      "name": "Jantar Mantar",
+      "category": "activity",
+      "lat": 26.9246,
+      "lng": 75.8247,
+      "avg_cost": 200,
+      "avg_duration_min": 60,
+      "opening_hours": "09:00-16:30",
+      "notes": "Adjacent to City Palace, easy to combine"
+    },
+    {
+      "id": "act-05",
+      "name": "Nahargarh Fort",
+      "category": "activity",
+      "lat": 26.9373,
+      "lng": 75.8155,
+      "avg_cost": 200,
+      "avg_duration_min": 120,
+      "opening_hours": "10:00-19:30",
+      "notes": "Best at sunset, hilltop view over the city"
+    },
+    {
+      "id": "act-06",
+      "name": "Jal Mahal",
+      "category": "activity",
+      "lat": 26.9535,
+      "lng": 75.8461,
+      "avg_cost": 0,
+      "avg_duration_min": 30,
+      "opening_hours": "24 hours (exterior view only, no entry)"
+    },
+    {
+      "id": "act-07",
+      "name": "Albert Hall Museum",
+      "category": "activity",
+      "lat": 26.9114,
+      "lng": 75.8195,
+      "avg_cost": 150,
+      "avg_duration_min": 75,
+      "opening_hours": "09:00-17:00"
+    },
+    {
+      "id": "act-08",
+      "name": "Birla Mandir",
+      "category": "activity",
+      "lat": 26.8945,
+      "lng": 75.8064,
+      "avg_cost": 0,
+      "avg_duration_min": 40,
+      "opening_hours": "06:00-12:00, 15:00-21:00"
+    },
+    {
+      "id": "act-09",
+      "name": "Johari Bazaar",
+      "category": "activity",
+      "lat": 26.9196,
+      "lng": 75.8258,
+      "avg_cost": 0,
+      "avg_duration_min": 90,
+      "opening_hours": "10:30-21:00",
+      "notes": "Jewellery + textile shopping street"
+    },
+    {
+      "id": "act-10",
+      "name": "Chokhi Dhani Village Resort",
+      "category": "activity",
+      "lat": 26.7663,
+      "lng": 75.7822,
+      "avg_cost": 900,
+      "avg_duration_min": 180,
+      "opening_hours": "17:00-23:00",
+      "notes": "Cultural village experience + dinner, ~18km south, evening slot"
+    },
+    {
+      "id": "eat-01",
+      "name": "Laxmi Misthan Bhandar (LMB)",
+      "category": "eatery",
+      "lat": 26.9214,
+      "lng": 75.8256,
+      "avg_cost": 400,
+      "avg_duration_min": 45,
+      "opening_hours": "08:00-23:00"
+    },
+    {
+      "id": "eat-02",
+      "name": "Rawat Mishthan Bhandar",
+      "category": "eatery",
+      "lat": 26.9089,
+      "lng": 75.8022,
+      "avg_cost": 150,
+      "avg_duration_min": 30,
+      "opening_hours": "06:00-23:00",
+      "notes": "Famous for pyaaz kachori, cheap breakfast option"
+    },
+    {
+      "id": "eat-03",
+      "name": "Peacock Rooftop Restaurant",
+      "category": "eatery",
+      "lat": 26.9155,
+      "lng": 75.8172,
+      "avg_cost": 600,
+      "avg_duration_min": 60,
+      "opening_hours": "07:00-23:00",
+      "notes": "Rooftop view of Hawa Mahal"
+    },
+    {
+      "id": "eat-04",
+      "name": "Suvarna Mahal (Rambagh Palace)",
+      "category": "eatery",
+      "lat": 26.8908,
+      "lng": 75.8085,
+      "avg_cost": 3500,
+      "avg_duration_min": 90,
+      "opening_hours": "12:30-14:45, 19:30-22:45",
+      "notes": "Fine dining, splurge branch"
+    },
+    {
+      "id": "eat-05",
+      "name": "Tapri Central",
+      "category": "eatery",
+      "lat": 26.9124,
+      "lng": 75.8064,
+      "avg_cost": 250,
+      "avg_duration_min": 40,
+      "opening_hours": "09:00-23:00",
+      "notes": "Casual chai/cafe, good for a break between stops"
+    },
+    {
+      "id": "trans-01",
+      "name": "Jaipur Airport (JAI) to Old City",
+      "category": "transport",
+      "lat": 26.8242,
+      "lng": 75.8122,
+      "avg_cost": 450,
+      "avg_duration_min": 40,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~13km"
+    },
+    {
+      "id": "trans-02",
+      "name": "Old City to Amber Fort",
+      "category": "transport",
+      "lat": 26.955,
+      "lng": 75.838,
+      "avg_cost": 350,
+      "avg_duration_min": 30,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~11km, add +20min in morning traffic (08:30-10:00)"
+    },
+    {
+      "id": "trans-03",
+      "name": "Amber Fort to Nahargarh Fort",
+      "category": "transport",
+      "lat": 26.96,
+      "lng": 75.833,
+      "avg_cost": 300,
+      "avg_duration_min": 25,
+      "opening_hours": "24 hours",
+      "notes": "Cab, hill road, ~9km"
+    },
+    {
+      "id": "trans-04",
+      "name": "Old City to Chokhi Dhani",
+      "category": "transport",
+      "lat": 26.845,
+      "lng": 75.794,
+      "avg_cost": 500,
+      "avg_duration_min": 45,
+      "opening_hours": "24 hours",
+      "notes": "Cab, ~18km south, evening traffic can add +15min"
+    }
+  ]
+}

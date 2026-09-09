@@ -1,0 +1,138 @@
+{
+  "city": "Jaipur",
+  "scenario_name": "Amber Fort emergency closure (VIP state visit)",
+  "trigger": {
+    "broken_node_id": "act-01",
+    "broken_node_name": "Amber Fort",
+    "announced_at": "13:30",
+    "reason": "Sudden closure 14:00-17:00 for a VIP state visit (realistic, common occurrence)",
+    "affected_window": {
+      "start": "14:00",
+      "end": "17:30",
+      "duration_min": 210
+    }
+  },
+  "original_plan_for_window": {
+    "steps": [
+      {
+        "place_id": "act-01",
+        "name": "Amber Fort",
+        "start": "14:00",
+        "duration_min": 150,
+        "cost": 200
+      },
+      {
+        "place_id": "trans-03",
+        "name": "Amber Fort to Nahargarh Fort",
+        "start": "16:30",
+        "duration_min": 25,
+        "cost": 300
+      },
+      {
+        "place_id": "act-05",
+        "name": "Nahargarh Fort (rushed, partial sunset)",
+        "start": "16:55",
+        "duration_min": 35,
+        "cost": 200
+      }
+    ],
+    "total_cost": 700,
+    "total_duration_min": 210,
+    "quality_note": "Nahargarh visit cut to 35 of its recommended 120 min — misses most of sunset"
+  },
+  "recovery_plans": [
+    {
+      "id": "plan-a-reorder",
+      "label": "Reorder: swap fort visit order",
+      "description": "Go to Nahargarh Fort now for the full sunset window, return to Amber Fort right at 17:00 reopening for a quick highlights-only visit before 17:30 close.",
+      "steps": [
+        {
+          "place_id": "act-05",
+          "name": "Nahargarh Fort (full sunset)",
+          "start": "14:00",
+          "duration_min": 150,
+          "cost": 200
+        },
+        {
+          "place_id": "trans-03",
+          "name": "Nahargarh Fort to Amber Fort",
+          "start": "16:30",
+          "duration_min": 25,
+          "cost": 300
+        },
+        {
+          "place_id": "act-01",
+          "name": "Amber Fort (highlights only: Ganesh Pol, main courtyard)",
+          "start": "17:00",
+          "duration_min": 30,
+          "cost": 200
+        }
+      ],
+      "total_cost": 700,
+      "total_duration_min": 210,
+      "cost_delta": 0,
+      "time_delta_min": 0,
+      "tradeoff": "Same cost and time as original. You get the full sunset (better) but only 30 min inside Amber Fort (worse) instead of the reverse.",
+      "best_for": "Photography / sunset-priority travelers"
+    },
+    {
+      "id": "plan-b-substitute",
+      "label": "Substitute: skip Amber Fort today, defer it",
+      "description": "Drop Amber Fort from today's plan. Fill the window with Albert Hall Museum and Johari Bazaar shopping instead. Amber Fort gets flagged for the 08:00 opening slot on the next available day (best light, no crowds).",
+      "steps": [
+        {
+          "place_id": "act-07",
+          "name": "Albert Hall Museum",
+          "start": "14:00",
+          "duration_min": 75,
+          "cost": 150
+        },
+        {
+          "place_id": "act-09",
+          "name": "Johari Bazaar",
+          "start": "15:15",
+          "duration_min": 90,
+          "cost": 0
+        }
+      ],
+      "total_cost": 150,
+      "total_duration_min": 165,
+      "cost_delta": -550,
+      "time_delta_min": -45,
+      "tradeoff": "Saves 550 rupees and ends 45 min early (buffer/rest time). Amber Fort is deferred, not lost — auto-suggested for next day's 08:00 slot.",
+      "best_for": "Budget-conscious travelers, or multi-day trips with a free morning later"
+    },
+    {
+      "id": "plan-c-evening-pivot",
+      "label": "Pivot: rest, then cultural evening at Chokhi Dhani",
+      "description": "Free time back at the hotel until early evening, then head straight to Chokhi Dhani for the cultural village experience, which already includes dinner — replacing a separately-planned dinner stop.",
+      "steps": [
+        {
+          "place_id": "trans-04",
+          "name": "Old City to Chokhi Dhani",
+          "start": "16:45",
+          "duration_min": 45,
+          "cost": 500
+        },
+        {
+          "place_id": "act-10",
+          "name": "Chokhi Dhani Village Resort (incl. dinner)",
+          "start": "17:45",
+          "duration_min": 180,
+          "cost": 900
+        }
+      ],
+      "total_cost": 1400,
+      "total_duration_min": 225,
+      "baseline_for_comparison": {
+        "note": "Compare against original window (700) plus a separate dinner you'd have paid anyway (~500 at Peacock Rooftop)",
+        "baseline_total_inr": 1200
+      },
+      "cost_delta": 200,
+      "time_delta_min": 15,
+      "tradeoff": "Costs about 200 more than the original plan + a normal dinner, but replaces a rushed fort visit with a full cultural evening and folds dinner into one stop.",
+      "best_for": "Travelers who value one complete experience over squeezing in a second fort"
+    }
+  ],
+  "currency": "INR"
+}

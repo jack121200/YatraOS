@@ -1,0 +1,124 @@
+{
+  "city": "Bali",
+  "scenario_name": "Mount Batur summit trail closure (volcanic alert raised)",
+  "trigger": {
+    "broken_node_id": "act-05",
+    "broken_node_name": "Mount Batur Sunrise Trek",
+    "announced_at": "02:00",
+    "reason": "Indonesia's PVMBG (volcanology center) raises Mount Batur's alert status overnight after increased seismic tremors and gas emissions, closing the summit trail for the day as a precaution",
+    "affected_window": {
+      "start": "03:00",
+      "end": "09:15",
+      "duration_min": 375
+    }
+  },
+  "original_plan_for_window": {
+    "steps": [
+      {
+        "place_id": "trans-03",
+        "name": "Ubud to Mount Batur",
+        "start": "03:00",
+        "duration_min": 75,
+        "cost": 450000
+      },
+      {
+        "place_id": "act-05",
+        "name": "Mount Batur Sunrise Trek",
+        "start": "04:15",
+        "duration_min": 300,
+        "cost": 450000
+      }
+    ],
+    "total_cost": 900000,
+    "total_duration_min": 375,
+    "quality_note": "Cancelled entirely by the closure — no partial option, since summit access is barred outright for safety"
+  },
+  "recovery_plans": [
+    {
+      "id": "plan-a-reorder",
+      "label": "Reorder: low-elevation sunrise walk and rice terraces instead",
+      "description": "Skip the volcano for today. Catch the early light on the Campuhan Ridge Walk, then visit Tegallalang Rice Terraces once it's fully light. Batur is rescheduled to a later morning of the trip if the alert level drops.",
+      "steps": [
+        {
+          "place_id": "act-07",
+          "name": "Campuhan Ridge Walk",
+          "start": "05:30",
+          "duration_min": 60,
+          "cost": 0
+        },
+        {
+          "place_id": "act-03",
+          "name": "Tegallalang Rice Terraces",
+          "start": "06:30",
+          "duration_min": 75,
+          "cost": 25000
+        }
+      ],
+      "total_cost": 25000,
+      "total_duration_min": 135,
+      "cost_delta": -875000,
+      "time_delta_min": -240,
+      "tradeoff": "Saves 875,000 rupiah and finishes about 4 hours earlier than the cancelled trek; trades the volcano summit for an easy ridge walk and rice terraces in similarly soft morning light.",
+      "best_for": "Travelers who want an early-morning outing without the cost or effort of trekking an active volcano under alert"
+    },
+    {
+      "id": "plan-b-substitute",
+      "label": "Substitute: sleep in, Monkey Forest and Ubud Palace instead",
+      "description": "Drop the volcano trek entirely. Sleep in and do a relaxed late-morning visit to Ubud Monkey Forest and Ubud Palace, both a short walk from central Ubud.",
+      "steps": [
+        {
+          "place_id": "act-04",
+          "name": "Ubud Monkey Forest",
+          "start": "09:00",
+          "duration_min": 60,
+          "cost": 80000
+        },
+        {
+          "place_id": "act-08",
+          "name": "Ubud Palace (Puri Saren Agung)",
+          "start": "10:00",
+          "duration_min": 30,
+          "cost": 0
+        }
+      ],
+      "total_cost": 80000,
+      "total_duration_min": 90,
+      "cost_delta": -820000,
+      "time_delta_min": -285,
+      "tradeoff": "Saves 820,000 rupiah and nearly 5 hours; no pre-dawn wake-up needed. Batur is dropped from the itinerary altogether rather than rescheduled.",
+      "best_for": "Travelers who'd rather sleep in and keep the day low-key than chase a volcano reschedule"
+    },
+    {
+      "id": "plan-c-evening-pivot",
+      "label": "Pivot: clifftop sunset and Kecak fire dance at Uluwatu",
+      "description": "Swap the missed sunrise for a dramatic sunset instead. Head to Uluwatu Temple in the late afternoon for the clifftop views and the evening Kecak fire dance.",
+      "steps": [
+        {
+          "place_id": "trans-04",
+          "name": "Ubud to Uluwatu Temple",
+          "start": "15:30",
+          "duration_min": 90,
+          "cost": 500000
+        },
+        {
+          "place_id": "act-02",
+          "name": "Uluwatu Temple + Kecak Fire Dance",
+          "start": "17:00",
+          "duration_min": 120,
+          "cost": 100000
+        }
+      ],
+      "total_cost": 600000,
+      "total_duration_min": 210,
+      "baseline_for_comparison": {
+        "note": "Compare against original window (900000) plus a casual evening out you'd likely have anyway (~150000 for a normal Ubud dinner)",
+        "baseline_total_inr": 1050000
+      },
+      "cost_delta": -450000,
+      "time_delta_min": -165,
+      "tradeoff": "Costs 450,000 less than the cancelled sunrise trek plus a normal evening out would have; swaps the missed sunrise on an active volcano for a clifftop sunset and fire dance instead.",
+      "best_for": "Travelers who want one spectacular golden-hour experience without an alpine-start wake-up"
+    }
+  ],
+  "currency": "IDR"
+}

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  "Autonomous Tour Graph Platform" — the Biscoff Caramel design system in
+  stitch_yatraos_dynamic_tour_platform/autonomous_tour_graph_platform/DESIGN.md.
+  Editorial warm luxury: artisanal paper surfaces, roasted-caramel accents,
+  espresso text. Light theme only — the source design defines no dark
+  variant, so inventing one would contradict "use that exact design."
+
+  Token NAMES here (--canvas, --cyan, --nominal, etc.) are carried over from
+  an earlier dark-theme pass so component class names didn't need a second
+  full rewrite — only the VALUES changed. --cyan now IS the caramel primary,
+  --indigo IS the terracotta secondary. Treat the name as a role, not a hue.
+*/
+:root {
+  --canvas: 253 251 247; /* #FDFBF7 porcelain cream */
+  --surface-01: 246 239 230; /* #F6EFE6 oat grain (muted/inset) */
+  --surface-02: 250 246 238; /* #FAF6EE folded biscuit (card default) */
+  --surface-elevated: 250 246 238;
+
+  --cyan: 140 83 43; /* #8C532B Biscoff Caramel — primary */
+  --cyan-bright: 165 99 54; /* #A56336 hover */
+  --indigo: 184 92 56; /* #B85C38 Terracotta Bronze — secondary */
+  --tertiary: 200 138 88; /* #C88A58 Warm Golden Biscuit */
+
+  --nominal: 45 106 79; /* #2D6A4F sage emerald */
+  --caution: 217 119 6; /* #D97706 ochre amber */
+  --critical: 194 65 12; /* #C2410C vermilion */
+
+  --text-polar: 27 21 16; /* #1B1510 espresso charcoal */
+  --text-slate: 74 62 54; /* #4A3E36 roasted chicory */
+  --text-muted: 122 108 98; /* #7A6C62 warm stone brown */
+
+  --border-hairline: 236 225 208; /* #ECE1D0 pressed artisan fiber */
+
+  color-scheme: light;
+}
+
+body {
+  @apply bg-canvas text-polar font-sans antialiased;
+  background-image: radial-gradient(ellipse 70% 50% at 50% -10%, rgba(200, 138, 88, 0.08), transparent);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum";
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--cyan));
+  outline-offset: 2px;
+}
+
+/* Medium-elevation glassmorphic surface — DESIGN.md §Elevation & Depth */
+.panel {
+  background: rgba(250, 246, 238, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 138, 88, 0.22);
+  box-shadow: 0px 4px 16px rgba(36, 28, 21, 0.06), 0px 8px 24px rgba(140, 83, 43, 0.06);
+}
+
+.panel-hover {
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.panel-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(140, 83, 43, 0.35);
+  box-shadow: 0px 6px 20px rgba(140, 83, 43, 0.12);
+}
+
+/* "Selected"/emphasis treatment — warm specular tint, not a neon glow
+   (DESIGN.md §Cards & Graph Inspectors > Selected Card) */
+.glow-cyan {
+  box-shadow: inset 0 0 0 1px rgba(200, 138, 88, 0.25), 0 6px 20px rgba(140, 83, 43, 0.18);
+}
+.glow-critical {
+  box-shadow: inset 0 0 0 1px rgba(194, 65, 12, 0.25), 0 6px 20px rgba(194, 65, 12, 0.15);
+}
+.glow-nominal {
+  box-shadow: inset 0 0 0 1px rgba(45, 106, 79, 0.2);
+}
+
+/* Breathing status dot */
+@keyframes radar-ping {
+  0% {
+    box-shadow: 0 0 0 0 currentColor;
+    opacity: 1;
+  }
+  70% {
+    box-shadow: 0 0 0 6px transparent;
+    opacity: 0;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+    opacity: 0;
+  }
+}
+.radar-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  animation: radar-ping 2s ease-out infinite;
+}
+
+@keyframes pulse-travel {
+  0% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.pulse-line {
+  stroke-dasharray: 4 4;
+  animation: pulse-travel 1s linear infinite;
+}
+
+.reveal {
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal-armed {
+  opacity: 0;
+  transform: translateY(16px);
+}
+.reveal-armed.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal-armed {
+    opacity: 1;
+    transform: none;
+  }
+}

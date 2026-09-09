@@ -1,0 +1,23 @@
+# env files — never commit real secrets
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env.local
+
+# node
+node_modules/
+frontend/dist/
+npm-debug.log*
+
+# python
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.venv/
+backend/venv/
+*.pyc
+
+# misc
+.DS_Store
+.vscode/*.local.json
+.playwright-mcp/

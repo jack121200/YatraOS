@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#0b1326","surface-container-low":"#131b2e","on-tertiary-container":"#00452e","tertiary-container":"#1bbd85","secondary":"#c0c1ff","outline":"#869397","inverse-surface":"#dae2fd","primary-container":"#06b6d4","on-surface-variant":"#bcc9cd","error":"#ffb4ab","tertiary-fixed":"#6ffbbe","on-primary":"#003640","on-error-container":"#ffdad6","error-container":"#93000a","tertiary":"#4edea3","on-primary-fixed-variant":"#004e5c","on-secondary-container":"#b0b2ff","inverse-primary":"#00687a","surface-container-lowest":"#060e20","surface-container-high":"#222a3d","surface":"#0b1326","on-tertiary-fixed":"#002113","secondary-fixed-dim":"#c0c1ff","outline-variant":"#3d494c","on-tertiary":"#003824","on-secondary-fixed-variant":"#2f2ebe","on-background":"#dae2fd","primary":"#4cd7f6","secondary-fixed":"#e1e0ff","background":"#0b1326","tertiary-fixed-dim":"#4edea3","surface-bright":"#31394d","secondary-container":"#3131c0","on-error":"#690005","on-tertiary-fixed-variant":"#005236","surface-container":"#171f33","on-secondary":"#1000a9","primary-fixed-dim":"#4cd7f6","on-primary-container":"#00424f","on-secondary-fixed":"#07006c","surface-container-highest":"#2d3449","inverse-on-surface":"#283044","surface-variant":"#2d3449","primary-fixed":"#acedff","on-primary-fixed":"#001f26","on-surface":"#dae2fd","surface-tint":"#4cd7f6"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-mobile":"1rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-xl":"1.5rem","margin-mobile":"1rem","space-lg":"1.25rem","margin-tablet":"2rem","space-2xs":"0.125rem","space-base":"1rem","space-4xl":"4rem","margin-desktop":"3rem","space-2xl":"2rem","space-md":"0.75rem","space-xs":"0.25rem","space-3xl":"3rem"},fontFamily:{"headline-xl":["Plus Jakarta Sans"],"telemetry-sm":["JetBrains Mono"],"headline-md":["Plus Jakarta Sans"],"telemetry-lg":["JetBrains Mono"],"headline-2xl":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"telemetry-md":["JetBrains Mono"],"headline-2xl-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-caps":["JetBrains Mono"]},fontSize:{"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.025em",fontWeight:"600"}],"telemetry-sm":["11px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"600"}],"telemetry-lg":["18px",{lineHeight:"24px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-2xl":["44px",{lineHeight:"52px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"400"}],"telemetry-md":["14px",{lineHeight:"20px",letterSpacing:"-0.01em",fontWeight:"500"}],"headline-2xl-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-xl-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-caps":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_8px_32px_-4px_rgba(0,0,0,0.6)]"><div class="h-20 w-full px-space-xl lg:px-space-3xl flex items-center justify-between gap-space-base"><div class="flex items-center gap-space-xl shrink-0"><div class="flex items-center gap-space-md"><img alt="YatraOS Brandmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VouPFVQxYs8LucAYosISgFUQZPTlUE2asmF2DWeLQXCcwXzLgI0pKmNjTkLOykyGGaYmaQaXko5pF9skJ1YLdAmDTadAcCpLs_dYvHK3W9NCDJAZw7S2Fe7Q6L7S8I6A_JuzIUnluzuelBwRcPpiURcH2FnRMbMMfqwBXgMn88o-gd78e-DMUbeyZJ-T4mB2fo9kopd98oQ-fXM6Wo7WSsLe1YmHB4IjanirjHT1GguUzL0h5YmOiFPdAS"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">Yatra<span class="text-primary">OS</span></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Mission Telemetry</span></div></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-lowest/80 px-space-md py-space-xs rounded-full shadow-[0_0_16px_-2px_rgba(16,185,129,0.15)]"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-telemetry-sm text-telemetry-sm text-tertiary tracking-wide">Ripple Engine: v3.2 Active · 41ms latency · Graph Invariance Nominal</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-headline-sm rounded-lg shadow-[0_0_24px_-4px_rgba(6,182,212,0.25)]"><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-headline-sm rounded-lg shadow-[0_0_24px_-4px_rgba(6,182,212,0.25)]" data-path="platform-overview" href="#">Platform Overview</a><a class="px-space-md py-space-sm font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 rounded-lg transition-colors" data-path="traveller-live-graph" href="#">Traveller Live Graph</a><a class="px-space-md py-space-sm font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 rounded-lg transition-colors" data-path="operator-radar" href="#">Operator Radar</a><a class="px-space-md py-space-sm font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 rounded-lg transition-colors" data-path="architecture-engine" href="#">Architecture &amp; Engine</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex items-center bg-surface-container-lowest/90 rounded-lg p-space-2xs"><button class="px-space-md py-space-xs font-label-caps text-label-caps uppercase text-on-surface bg-surface-container-high rounded transition-colors" type="button">Traveller</button><button class="px-space-md py-space-xs font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" type="button">Operator</button><button class="px-space-md py-space-xs font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" type="button">Vendor</button></div><button class="px-space-lg py-space-xs font-headline-sm text-headline-sm rounded-lg bg-gradient-to-r from-primary-container to-secondary-container text-on-primary shadow-[0_0_16px_rgba(6,182,212,0.35)] hover:opacity-95 transition-opacity" type="button">Launch Live Demo</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(76,215,246,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 pb-12 bg-background min-h-[calc(100vh-3rem)]"><div class="flex flex-col w-full">
+<!-- Top Telemetry Sub-Band -->
+<section class="w-full px-space-base sm:px-space-xl lg:px-space-3xl py-space-sm bg-surface-container-lowest/70 backdrop-blur-md">
+<div class="max-w-[1680px] mx-auto flex flex-wrap items-center justify-between gap-y-space-xs gap-x-space-md text-on-surface-variant font-telemetry-sm text-telemetry-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-container/15 text-primary text-label-caps font-label-caps tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+          Autonomous Node DAG
+        </span>
+<span class="text-outline">·</span>
+<span>HACKCELRESTIAL 3.0 PS ID: 07</span>
+<span class="text-outline">·</span>
+<span class="text-on-surface">Target Node: Varanasi Riverfront Complex</span>
+</div>
+<div class="flex items-center gap-space-lg font-telemetry-sm">
+<div class="flex items-center gap-1.5">
+<span class="text-outline">DAG Invariance:</span>
+<span class="text-tertiary">STABLE 100%</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="text-outline">Graph Traversal:</span>
+<span class="text-secondary">Dijkstra / NetworkX v3.2</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 1. HERO SECTION -->
+<section class="relative w-full px-space-base sm:px-space-xl lg:px-space-3xl py-space-xl lg:py-space-3xl overflow-hidden">
+<div class="max-w-[1680px] mx-auto flex flex-col gap-space-2xl">
+<!-- Title & Value Hook -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high font-label-caps text-label-caps uppercase tracking-widest text-primary">
+              Mission Critical Travel Topology
+            </span>
+<span class="text-outline-variant font-telemetry-sm text-telemetry-sm">SYS_ID: YATRA-VARANASI-881</span>
+</div>
+<h1 class="font-headline-2xl text-headline-2xl text-on-surface tracking-tight">
+            The World's First <span class="bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent">Autonomous Tour Graph Engine.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            Where every trip is an interconnected dependency network — not a dead static itinerary. When reality breaks, YatraOS heals downstream bookings in milliseconds.
+          </p>
+</div>
+<!-- Telemetry Quick Tickers -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm bg-surface-container/60 backdrop-blur-xl p-space-lg rounded-xl shadow-xl">
+<div class="flex items-center justify-between font-telemetry-sm text-telemetry-sm">
+<span class="text-outline">Downstream Propagation</span>
+<span class="text-tertiary font-semibold">38ms [Nominal]</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="w-[94%] h-full bg-gradient-to-r from-primary to-tertiary"></div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs font-telemetry-sm text-telemetry-sm">
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="text-on-surface-variant block text-label-caps font-label-caps">DAG AUTO-HEAL</span>
+<span class="font-telemetry-lg text-telemetry-lg text-on-surface">99.4%</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="text-on-surface-variant block text-label-caps font-label-caps">ACTIVE RESCHEDULES</span>
+<span class="font-telemetry-lg text-telemetry-lg text-primary">0 Calls</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Media Cockpit Table with Visual Overlay HUD -->
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-lowest shadow-2xl group">
+<div class="relative w-full h-[460px] sm:h-[580px] lg:h-[660px] overflow-hidden">
+<!-- Main Hero Image from DataStore -->
+<img alt="YatraOS Holographic 3D Interactive Map Table of India Tour Routing Network with Glowing Nodes" class="w-full h-full object-cover opacity-90 scale-100 group-hover:scale-105 transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADAqM6qwrBIsOrRmdaOHG9PKAKQPlOJPctRiqPeOOZKSI8woIqA-vHJVnW2hXdA488Inri7CZhvV9H_JPYKnBZFrG0V2l2kAPF4mVfa4DcqF6ynC7aOpKGUaBd3N_KPuPLX62ZCPunkSv-KjCiDVr-27RkWONUFf9364J5lkggGoFcJG1WkjYok2OXRlmgwKV1nIwwIJj48Y746LjWvxCe6mmhRBUaGEQZ1jVQBPi92AfKOBF4Y8Yc7A"/>
+<!-- Radial Ambient Cockpit Vignette -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/70 via-transparent to-surface-container-lowest/70"></div>
+<!-- Top HUD Header Strip -->
+<div class="absolute top-space-md sm:top-space-xl left-space-md sm:left-space-xl right-space-md sm:right-space-xl flex flex-wrap items-center justify-between gap-space-sm pointer-events-none">
+<div class="flex items-center gap-space-sm bg-surface-container-lowest/80 backdrop-blur-md px-space-md py-space-xs rounded-lg shadow-lg">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface font-semibold uppercase tracking-wider">Telemetry: India Unified Tour DAG</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm bg-surface-container-lowest/80 backdrop-blur-md px-space-md py-space-xs rounded-lg font-telemetry-sm text-telemetry-sm">
+<span class="text-primary">CLUSTER:</span>
+<span class="text-on-surface">Varanasi - Jaipur - Munnar Express</span>
+<span class="text-outline">|</span>
+<span class="text-tertiary">NODES MONITORED: 14,290</span>
+</div>
+</div>
+<!-- Floating Tactical HUD Hotspots mimicking Holo-Table -->
+<!-- Hotspot 1: Varanasi Ghat Complex -->
+<div class="absolute top-1/3 left-[48%] sm:left-[52%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-auto cursor-pointer group/node">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-12 h-12 rounded-full bg-primary/25 animate-ping"></span>
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[16px]">temple_hindu</span>
+</div>
+</div>
+<div class="mt-2 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-xl text-center">
+<span class="block font-label-caps text-label-caps text-primary tracking-widest">CRITICAL ANCHOR NODE</span>
+<span class="block font-headline-sm text-headline-sm text-on-surface">Varanasi Ganga Aarti</span>
+<span class="block font-telemetry-sm text-telemetry-sm text-tertiary font-semibold">Status: Dynamic Auto-Hold</span>
+</div>
+</div>
+<!-- Hotspot 2: Vande Bharat Express -->
+<div class="hidden md:flex absolute top-[52%] left-[28%] -translate-x-1/2 -translate-y-1/2 flex-col items-center pointer-events-auto">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-8 h-8 rounded-full bg-secondary/30 animate-pulse"></span>
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[14px]">train</span>
+</div>
+</div>
+<div class="mt-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-1 rounded text-center">
+<span class="font-telemetry-sm text-telemetry-sm text-secondary">VB-22436 · Track Sync: Live</span>
+</div>
+</div>
+<!-- Hotspot 3: Luxury Bajra Houseboat -->
+<div class="hidden md:flex absolute bottom-[26%] right-[24%] flex-col items-center pointer-events-auto">
+<div class="relative flex items-center justify-center">
+<div class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[14px]">sailing</span>
+</div>
+</div>
+<div class="mt-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-1 rounded text-center">
+<span class="font-telemetry-sm text-telemetry-sm text-tertiary">Ganges VIP Bajra · Rescheduled</span>
+</div>
+</div>
+<!-- Bottom Tactical Action Tray on Hero Overlay -->
+<div class="absolute bottom-space-md sm:bottom-space-xl left-space-md sm:left-space-xl right-space-md sm:right-space-xl flex flex-wrap items-center justify-between gap-space-md bg-surface-container-lowest/85 backdrop-blur-xl p-space-md sm:p-space-lg rounded-xl shadow-2xl">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">hub</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Autonomous Operational Room</span>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface-variant block">Zero-touch upstream disruption compensation active</span>
+</div>
+</div>
+<!-- Action Triggers -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded-lg bg-error-container text-on-error font-headline-sm text-headline-sm hover:brightness-110 shadow-lg flex items-center gap-1.5 transition-all" id="btn-trigger-hero-sim" type="button">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+                Simulate Live Delay (Varanasi Ghats)
+              </button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-headline-sm text-headline-sm flex items-center gap-1.5 transition-colors" onclick="document.getElementById('interactive-simulator').scrollIntoView({behavior: 'smooth'})" type="button">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+                Explore Interactive Graph
+              </button>
+<button class="px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm hover:opacity-95 shadow-[0_0_20px_rgba(6,182,212,0.3)] flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">radar</span>
+                View Operator Room
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. INTERACTIVE PARADIGM SHIFT COMPARISON -->
+<section class="w-full px-space-base sm:px-space-xl lg:px-space-3xl py-space-2xl bg-surface-container-lowest/50">
+<div class="max-w-[1680px] mx-auto flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest block">Structural Comparison</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">The Paradigm Shift: Dead List vs. Living Neural DAG</h2>
+</div>
+<p class="font-telemetry-sm text-telemetry-sm text-on-surface-variant max-w-md">
+          Legacy OTAs treat itineraries as independent decoupled rows. YatraOS connects them with directional mathematical vectors.
+        </p>
+</div>
+<!-- Side by Side Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl">
+<!-- LEFT: Legacy Flat Itinerary (MakeMyTrip / Veena World) -->
+<div class="flex flex-col rounded-2xl bg-surface-container-low p-space-xl shadow-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-error-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Header Badge -->
+<div class="flex items-center justify-between mb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-error-container/30 text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">error</span>
+</span>
+<div>
+<span class="font-headline-md text-headline-md text-on-surface block">Legacy Flat Architecture</span>
+<span class="font-telemetry-sm text-telemetry-sm text-outline">MakeMyTrip, Veena World, Manual Excel</span>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-error-container/20 text-error font-label-caps text-label-caps uppercase tracking-wider">
+              Static Row-Based
+            </span>
+</div>
+<!-- Legacy Event Stack -->
+<div class="flex flex-col gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-space-md">
+<span class="material-symbols-outlined text-error mt-0.5 text-[20px]">train</span>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Vande Bharat 22436</span>
+<span class="font-telemetry-sm text-telemetry-sm text-error font-bold">+120m DELAYED</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Static arrival schedule fails at 14:15 IST.</p>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-error-container/10 flex items-start gap-space-md">
+<span class="material-symbols-outlined text-error mt-0.5 text-[20px]">cancel</span>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Private Bajra Boat Sunset Cruise</span>
+<span class="font-telemetry-sm text-telemetry-sm text-error font-semibold">MISSED &amp; NO REFUND</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant mt-0.5">Boat departed empty. ₹6,500 non-refundable ticket lost.</p>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-error-container/10 flex items-start gap-space-md">
+<span class="material-symbols-outlined text-error mt-0.5 text-[20px]">ring_volume</span>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dashashwamedh VIP Priest Pass</span>
+<span class="font-telemetry-sm text-telemetry-sm text-error">PANIC PHONE CALLS</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant mt-0.5">Endless frantic calls to local vendor while stuck on highway.</p>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-space-md">
+<span class="material-symbols-outlined text-outline mt-0.5 text-[20px]">table_rows</span>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Post-Trip Expense Split</span>
+<span class="font-telemetry-sm text-telemetry-sm text-outline">DISPUTED MANUAL RE-CALC</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant mt-0.5">Travellers argue over who covers unused boat fees on Splitwise 3 days later.</p>
+</div>
+</div>
+</div>
+<!-- Legacy Outcome Footer -->
+<div class="mt-space-lg p-space-md rounded-lg bg-error-container/20 text-on-error-container font-telemetry-sm text-telemetry-sm flex items-center justify-between">
+<span>Result: 4 Downstream Bookings Collapsed</span>
+<span class="font-bold uppercase tracking-wide">Customer Burden: 100%</span>
+</div>
+</div>
+<!-- RIGHT: YatraOS Dynamic Graph Model -->
+<div class="flex flex-col rounded-2xl bg-surface-container p-space-xl shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Header Badge -->
+<div class="flex items-center justify-between mb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">schema</span>
+</span>
+<div>
+<span class="font-headline-md text-headline-md text-on-surface block">YatraOS Dynamic Graph Model</span>
+<span class="font-telemetry-sm text-telemetry-sm text-tertiary">NetworkX Directed Acyclic Graph (DAG)</span>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-tertiary-container/20 text-tertiary font-label-caps text-label-caps uppercase tracking-wider">
+              Autonomous Healing
+            </span>
+</div>
+<!-- Connected Graph Vector Sequence -->
+<div class="flex flex-col gap-space-md relative">
+<!-- Vector 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-high flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary mt-0.5 text-[20px]">train</span>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Vande Bharat 22436 (+120m)</span>
+<span class="font-telemetry-sm text-telemetry-sm text-primary font-bold">EVENT DETECTED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">GPS telemetry trigger ingested into Ripple Engine via Indian Railway API.</p>
+</div>
+</div>
+<!-- Vector 2 -->
+<div class="p-space-md rounded-lg bg-tertiary-container/10 flex items-start gap-space-md">
+<span class="material-symbols-outlined text-tertiary mt-0.5 text-[20px]">auto_mode</span>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Private Sunset Bajra Boat</span>
+<span class="font-telemetry-sm text-telemetry-sm text-tertiary font-semibold">SLOT PUSHED TO 19:30</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Boat captain notified automatically via WhatsApp vendor webhook. Zero calls made.</p>
+</div>
+</div>
+<!-- Vector 3 -->
+<div class="p-space-md rounded-lg bg-tertiary-container/10 flex items-start gap-space-md">
+<span class="material-symbols-outlined text-tertiary mt-0.5 text-[20px]">verified</span>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dashashwamedh Aarti VIP Pass</span>
+<span class="font-telemetry-sm text-telemetry-sm text-tertiary font-semibold">SEAT PRESERVED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Priest association token re-validated for 2nd wave seating automatically.</p>
+</div>
+</div>
+<!-- Vector 4 -->
+<div class="p-space-md rounded-lg bg-surface-container-high flex items-start gap-space-md">
+<span class="material-symbols-outlined text-secondary mt-0.5 text-[20px]">account_balance_wallet</span>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Autonomous Split Ledger</span>
+<span class="font-telemetry-sm text-telemetry-sm text-secondary font-semibold">REBALANCED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">₹120 buffer dynamically apportioned across all 4 travellers in real-time.</p>
+</div>
+</div>
+</div>
+<!-- YatraOS Outcome Footer -->
+<div class="mt-space-lg p-space-md rounded-lg bg-tertiary-container/20 text-on-tertiary-container font-telemetry-sm text-telemetry-sm flex items-center justify-between">
+<span>Result: 100% Itinerary Preserved in 38ms</span>
+<span class="font-bold uppercase tracking-wide text-tertiary">Zero Manual Stress</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. LIVE INTERACTIVE RIPPLE SIMULATOR (Peak Creative Component) -->
+<section class="w-full px-space-base sm:px-space-xl lg:px-space-3xl py-space-3xl bg-surface" id="interactive-simulator">
+<div class="max-w-[1680px] mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-error">Simulate Live Anomaly</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Live Varanasi Ripple Simulator</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Inject real-world travel delays and observe downstream DAG reconciliation in real-time.</p>
+</div>
+<!-- Delay Controller Buttons -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-xl shadow">
+<span class="font-telemetry-sm text-telemetry-sm text-outline px-space-sm hidden sm:inline">Inject Delay:</span>
+<button class="px-space-md py-space-xs rounded-lg font-telemetry-sm text-telemetry-sm bg-surface-container-high text-on-surface hover:bg-surface-bright transition-colors" id="delay-btn-30" type="button">
+            +30 min
+          </button>
+<button class="px-space-md py-space-xs rounded-lg font-telemetry-sm text-telemetry-sm bg-error-container text-on-error font-semibold shadow-md transition-all" id="delay-btn-85" type="button">
+            +85 min (Critical)
+          </button>
+<button class="px-space-md py-space-xs rounded-lg font-telemetry-sm text-telemetry-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" id="delay-btn-reset" type="button">
+            Reset (Nominal)
+          </button>
+</div>
+</div>
+<!-- Main Simulator Interactive Shell -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl">
+<!-- Node DAG Visual Timeline (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg bg-surface-container-low/80 backdrop-blur-xl p-space-lg sm:p-space-xl rounded-2xl shadow-xl">
+<div class="flex items-center justify-between font-telemetry-sm text-telemetry-sm text-outline pb-space-xs">
+<span>DAY 3 TIMELINE: VARANASI EXPEDITION</span>
+<span class="text-primary font-semibold" id="sim-timestamp">LOCAL TIME: 16:45 IST</span>
+</div>
+<!-- Node 1 -->
+<div class="relative flex flex-col sm:flex-row sm:items-center justify-between p-space-md sm:p-space-lg rounded-xl bg-surface-container-highest shadow-md gap-space-md transition-all duration-300" id="sim-node-1">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container/30 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">flight</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">IndiGo 6E-204 (DEL → VNS)</span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-caps text-label-caps uppercase" id="node-1-badge">
+                    DELAYED +85 MINS
+                  </span>
+</div>
+<p class="font-telemetry-sm text-telemetry-sm text-on-surface-variant mt-0.5">Scheduled Landing: 17:10 IST → Est. Touchdown: 18:35 IST</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-telemetry-sm text-telemetry-sm text-outline block">Root Origin Disruption</span>
+<span class="font-telemetry-sm text-telemetry-sm text-error font-bold">Propagation Initiated</span>
+</div>
+</div>
+<!-- Pulsing Connector 1 -> 2 -->
+<div class="flex items-center justify-center py-0.5">
+<div class="w-0.5 h-6 bg-gradient-to-b from-error to-tertiary animate-pulse"></div>
+</div>
+<!-- Node 2 -->
+<div class="relative flex flex-col sm:flex-row sm:items-center justify-between p-space-md sm:p-space-lg rounded-xl bg-surface-container shadow-md gap-space-md transition-all duration-300" id="sim-node-2">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">directions_car</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Private Chauffeur Pickup (Lal Bahadur Shastri)</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-caps text-label-caps uppercase" id="node-2-badge">
+                    AUTO-EXTENDED +90 MINS
+                  </span>
+</div>
+<p class="font-telemetry-sm text-telemetry-sm text-on-surface-variant mt-0.5">Driver Ramprasad notified. Flight tracker synced to vehicle dispatch.</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-telemetry-sm text-telemetry-sm text-outline block">Zero Waiting Penalty</span>
+<span class="font-telemetry-sm text-telemetry-sm text-tertiary font-semibold">Vendor Re-confirmed</span>
+</div>
+</div>
+<!-- Pulsing Connector 2 -> 3 -->
+<div class="flex items-center justify-center py-0.5">
+<div class="w-0.5 h-6 bg-gradient-to-b from-tertiary to-primary animate-pulse"></div>
+</div>
+<!-- Node 3 -->
+<div class="relative flex flex-col sm:flex-row sm:items-center justify-between p-space-md sm:p-space-lg rounded-xl bg-surface-container shadow-md gap-space-md transition-all duration-300" id="sim-node-3">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">sailing</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dashashwamedh Aarti VIP Boat</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/30 text-primary font-label-caps text-label-caps uppercase" id="node-3-badge">
+                    REROUTED TO 19:30 SLOT
+                  </span>
+</div>
+<p class="font-telemetry-sm text-telemetry-sm text-on-surface-variant mt-0.5" id="node-3-sub">Assigned to Captain Shanker Bajra. Evening ritual completely preserved.</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-telemetry-sm text-telemetry-sm text-outline block">Slot Swap Optimization</span>
+<span class="font-telemetry-sm text-telemetry-sm text-primary font-semibold" id="node-3-status">Option A Deployed</span>
+</div>
+</div>
+<!-- Pulsing Connector 3 -> 4 -->
+<div class="flex items-center justify-center py-0.5">
+<div class="w-0.5 h-6 bg-gradient-to-b from-primary to-secondary animate-pulse"></div>
+</div>
+<!-- Node 4 -->
+<div class="relative flex flex-col sm:flex-row sm:items-center justify-between p-space-md sm:p-space-lg rounded-xl bg-surface-container shadow-md gap-space-md transition-all duration-300" id="sim-node-4">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">restaurant</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">BrijRama Palace Heritage Rooftop Dining</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary-fixed font-label-caps text-label-caps uppercase">
+                    CONFIRMED PRESERVED
+                  </span>
+</div>
+<p class="font-telemetry-sm text-telemetry-sm text-on-surface-variant mt-0.5">Table reservation shifted smoothly from 20:15 to 21:00 IST.</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-telemetry-sm text-telemetry-sm text-outline block">Hospitality Handshake</span>
+<span class="font-telemetry-sm text-telemetry-sm text-tertiary font-semibold">Table Held</span>
+</div>
+</div>
+</div>
+<!-- Interactive Recovery Tiers & Live Ledger (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Recovery Tier Selector Card -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl p-space-lg rounded-2xl shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Multi-Objective Recovery Plans</span>
+<span class="font-telemetry-sm text-telemetry-sm text-outline">NetworkX DAG Solver</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Tier Option A -->
+<button class="w-full text-left p-space-md rounded-xl bg-primary-container text-on-primary shadow-lg transition-all" id="tier-btn-a" type="button">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">speed</span> Option A: Fastest
+                  </span>
+<span class="font-telemetry-sm text-telemetry-sm font-bold">+₹450 Total</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary/90 mt-1">Switch to Express River Taxi. Zero missed ceremonies or shortened experiences.</p>
+<div class="mt-2 flex items-center gap-2 font-telemetry-sm text-telemetry-sm text-on-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+<span>Active Plan Selected</span>
+</div>
+</button>
+<!-- Tier Option B -->
+<button class="w-full text-left p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface shadow transition-all" id="tier-btn-b" type="button">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">savings</span> Option B: Cheapest
+                  </span>
+<span class="font-telemetry-sm text-telemetry-sm text-tertiary font-bold">₹0 (Free Push)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Shift to 20:00 Public Ceremony. 100% instant refund on private boat slot.</p>
+</button>
+<!-- Tier Option C -->
+<button class="w-full text-left p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface shadow transition-all" id="tier-btn-c" type="button">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">tune</span> Option C: Least Disruptive
+                  </span>
+<span class="font-telemetry-sm text-telemetry-sm text-secondary font-bold">+₹120 Total</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Auto-bump dinner by 30 mins; driver waiting fee covered dynamically.</p>
+</button>
+</div>
+</div>
+<!-- Live Splitwise-Style Dynamic Group Ledger -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl p-space-lg rounded-2xl shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Autonomous Group Ledger</span>
+<span class="font-telemetry-sm text-telemetry-sm text-outline">Real-time dynamic recalculation</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">account_balance</span>
+</div>
+<!-- Travellers Split -->
+<div class="flex flex-col gap-space-xs font-telemetry-sm text-telemetry-sm">
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-[10px]">A</div>
+<span class="text-on-surface font-semibold">Aarav (Leader)</span>
+</div>
+<span class="text-tertiary font-bold" id="ledger-val-1">₹112.50</span>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[10px]">P</div>
+<span class="text-on-surface">Priya S.</span>
+</div>
+<span class="text-tertiary font-bold" id="ledger-val-2">₹112.50</span>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-bright text-on-surface flex items-center justify-center font-bold text-[10px]">K</div>
+<span class="text-on-surface">Kabir M.</span>
+</div>
+<span class="text-tertiary font-bold" id="ledger-val-3">₹112.50</span>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-bright text-on-surface flex items-center justify-center font-bold text-[10px]">A</div>
+<span class="text-on-surface">Ananya V.</span>
+</div>
+<span class="text-tertiary font-bold" id="ledger-val-4">₹112.50</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high/60 flex items-center justify-between font-telemetry-sm text-telemetry-sm">
+<span class="text-outline">Auto-settlement method:</span>
+<span class="text-primary font-semibold">UPI AutoPay Escrow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. 4-PILLAR UNIFIED VALUE MATRIX -->
+<section class="w-full px-space-base sm:px-space-xl lg:px-space-3xl py-space-3xl bg-surface-container-lowest/40">
+<div class="max-w-[1680px] mx-auto flex flex-col gap-space-2xl">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-widest block">System Architecture</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Four Pillars of Autonomous Tour Graph Operations</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Engineering clarity from prompt inception to group financial consensus.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Pillar 1 -->
+<div class="flex flex-col p-space-xl rounded-2xl bg-surface-container shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center mb-space-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">draw</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider block mb-1">Pillar 01</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-sm">AI Graph Builder</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg flex-1">
+            Transforms vague natural language briefs into rigorous mathematical Directed Acyclic Graphs (DAGs) with strict geospatial and temporal edge weights.
+          </p>
+<div class="p-space-sm rounded bg-surface-container-low font-telemetry-sm text-telemetry-sm text-outline">
+            Input: "3-day spiritual Varanasi with kids" → Output: 24 Topological Nodes
+          </div>
+</div>
+<!-- Pillar 2 -->
+<div class="flex flex-col p-space-xl rounded-2xl bg-surface-container shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center mb-space-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">alt_route</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-wider block mb-1">Pillar 02</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-sm">The Ripple Engine</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg flex-1">
+            Powered by NetworkX algorithms. When any single waypoint slips, it isolates downstream affected sub-graphs and runs Pareto-optimal rebalancing in &lt;40ms.
+          </p>
+<div class="p-space-sm rounded bg-surface-container-low font-telemetry-sm text-telemetry-sm text-tertiary">
+            Pareto Frontier: Cost vs. Experience preservation ratio 99.4%
+          </div>
+</div>
+<!-- Pillar 3 -->
+<div class="flex flex-col p-space-xl rounded-2xl bg-surface-container shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 text-secondary flex items-center justify-center mb-space-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">radar</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-1">Pillar 03</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-sm">Operator Radar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg flex-1">
+            Real-time operations center for travel agencies. Features fleet-wide Ripple Impact Scoring (0-100) allowing a single agent to manage 2,000 active expeditions.
+          </p>
+<div class="p-space-sm rounded bg-surface-container-low font-telemetry-sm text-telemetry-sm text-outline">
+            Automated Escalation: 0.6% requiring human discretion
+          </div>
+</div>
+<!-- Pillar 4 -->
+<div class="flex flex-col p-space-xl rounded-2xl bg-surface-container shadow-xl hover:-translate-y-1 transition-all group">
+<div class="w-12 h-12 rounded-xl bg-surface-bright text-primary flex items-center justify-center mb-space-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">payments</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary-fixed-dim uppercase tracking-wider block mb-1">Pillar 04</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-sm">Autonomous Group Ledger</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg flex-1">
+            Eliminates awkward group math. Dynamically recalculates obligations when members split, join for individual legs, or when delay compensation refunds clear.
+          </p>
+<div class="p-space-sm rounded bg-surface-container-low font-telemetry-sm text-telemetry-sm text-on-surface-variant">
+            Built-in micro-escrow &amp; UPI one-click settlement integration
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. LIVE ARCHITECTURE PIPELINE & TELEMETRY STRIP -->
+<section class="w-full px-space-base sm:px-space-xl lg:px-space-3xl py-space-3xl bg-surface-container-low">
+<div class="max-w-[1680px] mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest block">Technical Dataflow</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Autonomous Graph Pipeline Flow</h2>
+</div>
+<div class="flex items-center gap-space-sm text-outline font-telemetry-sm text-telemetry-sm">
+<span>PIPELINE HEALTH: OPTIMAL</span>
+<span>·</span>
+<span class="text-tertiary">0 DEADLOCKS</span>
+</div>
+</div>
+<!-- Flow Pipeline Step Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-space-md">
+<!-- Step 1 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs relative">
+<span class="font-telemetry-sm text-telemetry-sm text-primary font-bold">01 / INGESTION</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Plain Prompt</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">User intent input via Voice or WhatsApp.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs relative">
+<span class="font-telemetry-sm text-telemetry-sm text-secondary font-bold">02 / PARSER</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">LLM Intent</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Claude/Gemini JSON Schema extraction.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs relative">
+<span class="font-telemetry-sm text-telemetry-sm text-tertiary font-bold">03 / CORE GRAPH</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">NetworkX Core</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">DAG compilation with temporal locks.</p>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs relative">
+<span class="font-telemetry-sm text-telemetry-sm text-error font-bold">04 / DISRUPTIONS</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">APScheduler</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time railway/flight telemetry daemon.</p>
+</div>
+<!-- Step 5 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs relative">
+<span class="font-telemetry-sm text-telemetry-sm text-primary font-bold">05 / SOLVER</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Recovery Ranker</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pareto multi-tier optimization engine.</p>
+</div>
+<!-- Step 6 -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs relative">
+<span class="font-telemetry-sm text-telemetry-sm text-tertiary font-bold">06 / CONSENSUS</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Supabase &amp; UPI</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dynamic auto-escrow balance commit.</p>
+</div>
+</div>
+<!-- Integrated Tech Stack Badges Strip -->
+<div class="bg-surface-container-lowest/80 p-space-lg rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Engine Stack</span>
+<div class="h-4 w-px bg-outline-variant hidden sm:block"></div>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface">Production Telemetry Stack v3.2.4</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-md py-1 rounded bg-surface-container font-telemetry-sm text-telemetry-sm text-on-surface">FastAPI</span>
+<span class="px-space-md py-1 rounded bg-surface-container font-telemetry-sm text-telemetry-sm text-primary font-semibold">NetworkX</span>
+<span class="px-space-md py-1 rounded bg-surface-container font-telemetry-sm text-telemetry-sm text-on-surface">React 19</span>
+<span class="px-space-md py-1 rounded bg-surface-container font-telemetry-sm text-telemetry-sm text-error font-semibold">Redis Streams</span>
+<span class="px-space-md py-1 rounded bg-surface-container font-telemetry-sm text-telemetry-sm text-tertiary font-semibold">Supabase</span>
+<span class="px-space-md py-1 rounded bg-surface-container font-telemetry-sm text-telemetry-sm text-secondary font-semibold">Claude 3.7 &amp; Gemini Flash</span>
+<span class="px-space-md py-1 rounded bg-surface-container font-telemetry-sm text-telemetry-sm text-on-surface">Razorpay AutoPay</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive Client-Side Logic for Ripple Simulator -->
+<script>
+  (function initRippleSimulator() {
+    const btn30 = document.getElementById('delay-btn-30');
+    const btn85 = document.getElementById('delay-btn-85');
+    const btnReset = document.getElementById('delay-btn-reset');
+    const btnHeroSim = document.getElementById('btn-trigger-hero-sim');
+
+    const tierA = document.getElementById('tier-btn-a');
+    const tierB = document.getElementById('tier-btn-b');
+    const tierC = document.getElementById('tier-btn-c');
+
+    const node1Badge = document.getElementById('node-1-badge');
+    const node2Badge = document.getElementById('node-2-badge');
+    const node3Badge = document.getElementById('node-3-badge');
+    const node3Sub = document.getElementById('node-3-sub');
+    const node3Status = document.getElementById('node-3-status');
+    const simTimestamp = document.getElementById('sim-timestamp');
+
+    const ledger1 = document.getElementById('ledger-val-1');
+    const ledger2 = document.getElementById('ledger-val-2');
+    const ledger3 = document.getElementById('ledger-val-3');
+    const ledger4 = document.getElementById('ledger-val-4');
+
+    function setLedger(amountPerPerson) {
+      ledger1.textContent = amountPerPerson;
+      ledger2.textContent = amountPerPerson;
+      ledger3.textContent = amountPerPerson;
+      ledger4.textContent = amountPerPerson;
+    }
+
+    function resetToNominal() {
+      node1Badge.className = 'px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase';
+      node1Badge.textContent = 'ON TIME · SCHEDULED';
+      node2Badge.className = 'px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps uppercase';
+      node2Badge.textContent = 'CONFIRMED 17:30';
+      node3Badge.className = 'px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase';
+      node3Badge.textContent = 'ORIGINAL 18:30 SLOT CONFIRMED';
+      node3Sub.textContent = 'Direct departure from Assi Ghat. No delay compensation necessary.';
+      node3Status.textContent = 'Slot Optimal';
+      simTimestamp.textContent = 'LOCAL TIME: 15:00 IST';
+      setLedger('₹0.00');
+    }
+
+    function applyDelay85() {
+      node1Badge.className = 'px-2 py-0.5 rounded-full bg-error text-on-error font-label-caps text-label-caps uppercase';
+      node1Badge.textContent = 'DELAYED +85 MINS';
+      node2Badge.className = 'px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-caps text-label-caps uppercase';
+      node2Badge.textContent = 'AUTO-EXTENDED +90 MINS';
+      node3Badge.className = 'px-2 py-0.5 rounded-full bg-primary-container/30 text-primary font-label-caps text-label-caps uppercase';
+      node3Badge.textContent = 'REROUTED TO 19:30 SLOT';
+      node3Sub.textContent = 'Assigned to Captain Shanker Bajra. Evening ritual completely preserved.';
+      node3Status.textContent = 'Option A Deployed';
+      simTimestamp.textContent = 'LOCAL TIME: 16:45 IST (ANOMALY HEALED)';
+      setLedger('₹112.50');
+    }
+
+    function applyDelay30() {
+      node1Badge.className = 'px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps uppercase';
+      node1Badge.textContent = 'MODERATE DELAY +30 MINS';
+      node2Badge.className = 'px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-caps text-label-caps uppercase';
+      node2Badge.textContent = 'BUFFER CONSUMED (NO PENALTY)';
+      node3Badge.className = 'px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase';
+      node3Badge.textContent = 'SLOT INTACT 18:45 VIP PASS';
+      node3Sub.textContent = 'Chauffeur takes VIP Bypass Ring Road to Ghat. No schedule shifts required.';
+      node3Status.textContent = 'Zero Cost Recovery';
+      simTimestamp.textContent = 'LOCAL TIME: 15:30 IST';
+      setLedger('₹0.00');
+    }
+
+    if (btn30) btn30.addEventListener('click', applyDelay30);
+    if (btn85) btn85.addEventListener('click', applyDelay85);
+    if (btnReset) btnReset.addEventListener('click', resetToNominal);
+
+    if (btnHeroSim) {
+      btnHeroSim.addEventListener('click', () => {
+        document.getElementById('interactive-simulator').scrollIntoView({ behavior: 'smooth' });
+        applyDelay85();
+      });
+    }
+
+    function setActiveTier(btn) {
+      [tierA, tierB, tierC].forEach(b => {
+        if (b) {
+          b.className = 'w-full text-left p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface shadow transition-all';
+        }
+      });
+      btn.className = 'w-full text-left p-space-md rounded-xl bg-primary-container text-on-primary shadow-lg transition-all';
+    }
+
+    if (tierA) {
+      tierA.addEventListener('click', () => {
+        setActiveTier(tierA);
+        node3Badge.textContent = 'FAST RIVER TAXI (+₹450)';
+        node3Status.textContent = 'Option A (Speed Priority)';
+        setLedger('₹112.50');
+      });
+    }
+
+    if (tierB) {
+      tierB.addEventListener('click', () => {
+        setActiveTier(tierB);
+        node3Badge.textContent = '20:00 PUBLIC CEREMONY (₹0)';
+        node3Status.textContent = 'Option B (Budget Priority)';
+        setLedger('-₹1,625.00 (Refund)');
+      });
+    }
+
+    if (tierC) {
+      tierC.addEventListener('click', () => {
+        setActiveTier(tierC);
+        node3Badge.textContent = 'DINNER BUMPED 30M (+₹120)';
+        node3Status.textContent = 'Option C (Least Disruptive)';
+        setLedger('₹30.00');
+      });
+    }
+  })();
+</script></main><footer class="fixed bottom-0 left-0 w-full z-40 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]"><div class="h-12 w-full px-space-xl lg:px-space-3xl flex items-center justify-between font-telemetry-sm text-telemetry-sm"><div class="flex items-center gap-space-xl overflow-x-auto py-space-xs"><div class="flex items-center gap-space-xs text-on-surface-variant shrink-0"><span class="text-primary">Active Nodes:</span><span class="text-on-surface font-semibold">14,290</span></div><div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant shrink-0"><span class="text-primary">Auto-Resolved Disruptions:</span><span class="text-tertiary font-semibold">99.4%</span></div><div class="flex items-center gap-space-xs text-on-surface-variant shrink-0"><span class="text-primary">Consensus:</span><span class="text-tertiary-fixed font-semibold uppercase tracking-wider">Verified</span></div><div class="hidden md:flex items-center gap-space-xs text-on-surface-variant shrink-0"><span class="text-primary">NetworkX Layer:</span><span class="text-tertiary font-semibold uppercase tracking-wider">Online</span></div></div><div class="flex items-center gap-space-md text-on-surface-variant shrink-0"><span class="font-label-caps text-label-caps uppercase text-outline">Zulu UTC+00</span><span class="font-telemetry-sm text-telemetry-sm text-on-surface">SYS // NOMINAL</span></div></div></footer></body></html>

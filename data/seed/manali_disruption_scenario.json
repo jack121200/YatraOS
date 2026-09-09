@@ -1,0 +1,159 @@
+{
+  "city": "Manali",
+  "scenario_name": "Rohtang Pass road closure (sudden snowfall)",
+  "trigger": {
+    "broken_node_id": "act-04",
+    "broken_node_name": "Rohtang Pass",
+    "announced_at": "06:00",
+    "reason": "BRO (Border Roads Organisation) closes the Rohtang road beyond Marhi after fresh overnight snowfall raises landslide/avalanche risk; permit holders are turned back at the Gulaba checkpoint",
+    "affected_window": {
+      "start": "08:00",
+      "end": "14:00",
+      "duration_min": 360
+    }
+  },
+  "original_plan_for_window": {
+    "steps": [
+      {
+        "place_id": "trans-03",
+        "name": "Manali to Rohtang Pass",
+        "start": "08:00",
+        "duration_min": 120,
+        "cost": 2500
+      },
+      {
+        "place_id": "act-04",
+        "name": "Rohtang Pass",
+        "start": "10:00",
+        "duration_min": 240,
+        "cost": 550
+      }
+    ],
+    "total_cost": 3050,
+    "total_duration_min": 360,
+    "quality_note": "Permit already purchased for today; the checkpoint closure means the drive up would be turned back entirely if attempted"
+  },
+  "recovery_plans": [
+    {
+      "id": "plan-a-reorder",
+      "label": "Reorder: Solang Valley today, Rohtang moved to a later morning",
+      "description": "Swap today's slot for Solang Valley — lower altitude, on the same road corridor, and unaffected by the closure. Rohtang Pass is rescheduled to the trip's last available morning, weather permitting.",
+      "steps": [
+        {
+          "place_id": "trans-02",
+          "name": "Manali to Solang Valley",
+          "start": "08:00",
+          "duration_min": 35,
+          "cost": 600
+        },
+        {
+          "place_id": "act-03",
+          "name": "Solang Valley (ropeway + paragliding)",
+          "start": "08:35",
+          "duration_min": 180,
+          "cost": 1500
+        },
+        {
+          "place_id": "trans-02",
+          "name": "Solang Valley to Manali (return)",
+          "start": "11:35",
+          "duration_min": 35,
+          "cost": 600
+        }
+      ],
+      "total_cost": 2700,
+      "total_duration_min": 250,
+      "cost_delta": -350,
+      "time_delta_min": -110,
+      "tradeoff": "Saves 350 rupees and finishes about 110 min earlier, since Solang needs far less travel time than Rohtang. Trades the high-altitude pass views for a lower, safer valley experience today.",
+      "best_for": "Travelers with a flexible multi-day itinerary who can reattempt Rohtang on a clearer day"
+    },
+    {
+      "id": "plan-b-substitute",
+      "label": "Substitute: skip mountain passes, do Jogini waterfall + hot springs",
+      "description": "Drop high-altitude plans entirely for today. Trek to Jogini Waterfall from Vashisht village and soak in the hot springs afterward — both fully local and unaffected by the snow closure.",
+      "steps": [
+        {
+          "place_id": "trans-04",
+          "name": "Manali to Vashisht / Old Manali",
+          "start": "08:00",
+          "duration_min": 15,
+          "cost": 200
+        },
+        {
+          "place_id": "act-06",
+          "name": "Jogini Waterfall Trek",
+          "start": "08:15",
+          "duration_min": 150,
+          "cost": 0
+        },
+        {
+          "place_id": "act-05",
+          "name": "Vashisht Hot Springs & Temple",
+          "start": "10:45",
+          "duration_min": 60,
+          "cost": 0
+        }
+      ],
+      "total_cost": 200,
+      "total_duration_min": 225,
+      "cost_delta": -2850,
+      "time_delta_min": -135,
+      "tradeoff": "Saves 2850 rupees and over 2 hours; trades the high-altitude pass for a waterfall trek and hot springs soak, neither of which is affected by the road closure.",
+      "best_for": "Budget-conscious travelers, or those wary of thin-air conditions at 3,978m"
+    },
+    {
+      "id": "plan-c-evening-pivot",
+      "label": "Pivot: relaxed Old Manali day with Mall Road evening",
+      "description": "Treat the pass as skippable this trip. Spend the day at an easy pace around Hidimba Temple and Old Manali cafes, then shop on Mall Road before a Tibetan-Chinese dinner, folding a normal dinner stop into the plan.",
+      "steps": [
+        {
+          "place_id": "act-01",
+          "name": "Hidimba Devi Temple",
+          "start": "08:00",
+          "duration_min": 40,
+          "cost": 0
+        },
+        {
+          "place_id": "act-07",
+          "name": "Manu Temple, Old Manali",
+          "start": "08:40",
+          "duration_min": 30,
+          "cost": 0
+        },
+        {
+          "place_id": "eat-01",
+          "name": "Cafe 1947 (breakfast)",
+          "start": "09:10",
+          "duration_min": 60,
+          "cost": 500
+        },
+        {
+          "place_id": "act-09",
+          "name": "Mall Road, Manali (evening shopping)",
+          "start": "15:00",
+          "duration_min": 90,
+          "cost": 0
+        },
+        {
+          "place_id": "eat-05",
+          "name": "Chopsticks Restaurant (dinner)",
+          "start": "19:00",
+          "duration_min": 50,
+          "cost": 550
+        }
+      ],
+      "total_cost": 1050,
+      "total_duration_min": 270,
+      "baseline_for_comparison": {
+        "note": "Compare against original window (3050) plus a separate dinner you'd have paid anyway (~500 at Renaissance)",
+        "baseline_total_inr": 3550
+      },
+      "cost_delta": -2500,
+      "time_delta_min": -90,
+      "tradeoff": "Costs 2500 less than the original Rohtang excursion plus a normal dinner would have; trades pass views for an easy-paced cultural and shopping day with dinner folded in.",
+      "best_for": "Travelers happy to treat the pass as optional and enjoy Manali town at a relaxed pace"
+    }
+  ],
+  "currency": "INR"
+}

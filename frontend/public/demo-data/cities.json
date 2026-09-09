@@ -1,0 +1,82 @@
+{
+  "description": "Supported-city catalog for the traveller onboarding city-picker. All 7 cities now have full POI-level seed data + a scripted disruption scenario (demo_ready: true). The judged on-stage demo should still walk ONE rehearsed city (Jaipur is the reference/most-tested), per the roadmap's Golden Rule — the others are real, working data, not just catalog filler, but pick one for the actual pitch run-through.",
+  "cities": [
+    {
+      "id": "jaipur",
+      "name": "Jaipur",
+      "country": "India",
+      "region": "domestic",
+      "lat": 26.9124,
+      "lng": 75.7873,
+      "currency": "INR",
+      "demo_ready": true,
+      "why": "Heritage/desert circuit, deep POI data + the disruption scenario live here"
+    },
+    {
+      "id": "goa",
+      "name": "Goa",
+      "country": "India",
+      "region": "domestic",
+      "lat": 15.2993,
+      "lng": 74.1240,
+      "currency": "INR",
+      "demo_ready": true,
+      "why": "Beach + nightlife category — shows category breadth beyond heritage"
+    },
+    {
+      "id": "manali",
+      "name": "Manali",
+      "country": "India",
+      "region": "domestic",
+      "lat": 32.2432,
+      "lng": 77.1892,
+      "currency": "INR",
+      "demo_ready": true,
+      "why": "Mountain/adventure category, high disruption-relevance (weather/road closures are a real, common ripple trigger here)"
+    },
+    {
+      "id": "munnar",
+      "name": "Munnar",
+      "country": "India",
+      "region": "domestic",
+      "lat": 10.0889,
+      "lng": 77.0595,
+      "currency": "INR",
+      "demo_ready": true,
+      "why": "Backwaters/nature category, rounds out the domestic spread"
+    },
+    {
+      "id": "bali",
+      "name": "Bali",
+      "country": "Indonesia",
+      "region": "international",
+      "lat": -8.3405,
+      "lng": 115.0920,
+      "currency": "IDR",
+      "demo_ready": true,
+      "why": "Top outbound-from-India leisure destination — signals international scale to judges without an India-only ceiling"
+    },
+    {
+      "id": "dubai",
+      "name": "Dubai",
+      "country": "United Arab Emirates",
+      "region": "international",
+      "lat": 25.2048,
+      "lng": 55.2708,
+      "currency": "AED",
+      "demo_ready": true,
+      "why": "Highest-volume outbound-from-India destination, visa-easy, strong operator/vendor-ecosystem story for the pilot pitch (roadmap Phase 6)"
+    },
+    {
+      "id": "bangkok",
+      "name": "Bangkok",
+      "country": "Thailand",
+      "region": "international",
+      "lat": 13.7563,
+      "lng": 100.5018,
+      "currency": "THB",
+      "demo_ready": true,
+      "why": "Budget-friendly, huge Indian tourist base — pairs well with the ₹3/itinerary unit-economics pitch line"
+    }
+  ]
+}

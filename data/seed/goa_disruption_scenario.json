@@ -1,0 +1,159 @@
+{
+  "city": "Goa",
+  "scenario_name": "Dudhsagar Falls trek route closure (flash-flood warning)",
+  "trigger": {
+    "broken_node_id": "act-07",
+    "broken_node_name": "Dudhsagar Waterfalls",
+    "announced_at": "07:30",
+    "reason": "Forest department closes the jeep-safari trek route 09:00-13:00 after overnight heavy rain triggers a flash-flood warning (common June-Sept monsoon risk)",
+    "affected_window": {
+      "start": "09:00",
+      "end": "15:00",
+      "duration_min": 360
+    }
+  },
+  "original_plan_for_window": {
+    "steps": [
+      {
+        "place_id": "trans-03",
+        "name": "North Goa to Dudhsagar Falls",
+        "start": "09:00",
+        "duration_min": 120,
+        "cost": 1800
+      },
+      {
+        "place_id": "act-07",
+        "name": "Dudhsagar Waterfalls",
+        "start": "11:00",
+        "duration_min": 240,
+        "cost": 600
+      }
+    ],
+    "total_cost": 2400,
+    "total_duration_min": 360,
+    "quality_note": "Arrival at 11:00 lands mid-closure (route reopens 13:00) — the whole booked visit is at risk of a wasted trip"
+  },
+  "recovery_plans": [
+    {
+      "id": "plan-a-reorder",
+      "label": "Reorder: spice farm first, shortened falls visit after reopening",
+      "description": "Head to the nearby Sahakari Spice Farm for the morning instead, then travel on to Dudhsagar right after the 13:00 reopening for a shortened visit before the 17:00 close.",
+      "steps": [
+        {
+          "place_id": "trans-04",
+          "name": "North Goa to Sahakari Spice Farm",
+          "start": "09:00",
+          "duration_min": 55,
+          "cost": 700
+        },
+        {
+          "place_id": "act-10",
+          "name": "Sahakari Spice Farm Tour",
+          "start": "09:55",
+          "duration_min": 150,
+          "cost": 500
+        },
+        {
+          "place_id": "trans-03",
+          "name": "Spice Farm to Dudhsagar Falls (route via Ponda)",
+          "start": "12:25",
+          "duration_min": 120,
+          "cost": 1800
+        },
+        {
+          "place_id": "act-07",
+          "name": "Dudhsagar Waterfalls (shortened, post-reopening highlights only)",
+          "start": "14:25",
+          "duration_min": 35,
+          "cost": 600
+        }
+      ],
+      "total_cost": 3600,
+      "total_duration_min": 360,
+      "cost_delta": 1200,
+      "time_delta_min": 0,
+      "tradeoff": "Same total time as the original booking, but costs 1200 more rupees (a second transport leg since you go out-and-back) for a spice farm add-on plus only 35 min at the falls instead of 240.",
+      "best_for": "Travelers who refuse to miss Dudhsagar entirely and can absorb the extra transport cost"
+    },
+    {
+      "id": "plan-b-substitute",
+      "label": "Substitute: skip Dudhsagar, do Old Goa churches instead",
+      "description": "Drop Dudhsagar from today's plan entirely. Visit the Basilica of Bom Jesus and Se Cathedral in Old Goa, then browse Anjuna's laid-back stalls — no closure risk, much shorter commitment.",
+      "steps": [
+        {
+          "place_id": "trans-02",
+          "name": "North Goa to Old Goa Churches",
+          "start": "09:00",
+          "duration_min": 35,
+          "cost": 500
+        },
+        {
+          "place_id": "act-05",
+          "name": "Basilica of Bom Jesus",
+          "start": "09:35",
+          "duration_min": 45,
+          "cost": 0
+        },
+        {
+          "place_id": "act-06",
+          "name": "Se Cathedral, Old Goa",
+          "start": "10:20",
+          "duration_min": 30,
+          "cost": 0
+        },
+        {
+          "place_id": "act-03",
+          "name": "Anjuna beach-side downtime",
+          "start": "11:15",
+          "duration_min": 120,
+          "cost": 0
+        }
+      ],
+      "total_cost": 500,
+      "total_duration_min": 230,
+      "cost_delta": -1900,
+      "time_delta_min": -130,
+      "tradeoff": "Saves 1900 rupees and frees up over 2 hours of buffer/rest time. Dudhsagar is deferred, not lost — best attempted on a later day when there's no active flood warning.",
+      "best_for": "Budget-conscious travelers, or anyone uneasy about monsoon trek conditions"
+    },
+    {
+      "id": "plan-c-evening-pivot",
+      "label": "Pivot: relaxed beach day, then Baga nightlife with dinner folded in",
+      "description": "Skip the day-long waterfall trip altogether. Spend the freed-up day at Baga Beach, then head into the evening with dinner at a beach shack followed by Tito's Lane, replacing a separately-planned dinner stop.",
+      "steps": [
+        {
+          "place_id": "act-02",
+          "name": "Baga Beach",
+          "start": "09:00",
+          "duration_min": 120,
+          "cost": 0
+        },
+        {
+          "place_id": "eat-03",
+          "name": "Curlies Beach Shack (early dinner)",
+          "start": "18:30",
+          "duration_min": 90,
+          "cost": 700
+        },
+        {
+          "place_id": "act-09",
+          "name": "Tito's Lane Nightlife",
+          "start": "20:15",
+          "duration_min": 180,
+          "cost": 1000
+        }
+      ],
+      "total_cost": 1700,
+      "total_duration_min": 390,
+      "baseline_for_comparison": {
+        "note": "Compare against original window (2400) plus a separate dinner you'd have paid anyway (~700 at Britto's)",
+        "baseline_total_inr": 3100
+      },
+      "cost_delta": -1400,
+      "time_delta_min": 30,
+      "tradeoff": "Costs 1400 less than the original waterfall day plus a normal dinner, since the day-long Dudhsagar booking and transport are dropped entirely in favor of beach time and a low-key nightlife evening with dinner folded in.",
+      "best_for": "Travelers who'd rather not gamble on a monsoon-closure reopening and enjoy Goa's nightlife instead"
+    }
+  ],
+  "currency": "INR"
+}
